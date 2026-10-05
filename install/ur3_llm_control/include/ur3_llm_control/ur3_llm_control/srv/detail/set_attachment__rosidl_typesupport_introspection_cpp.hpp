@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/build/ur3_llm_control/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_introspection_cpp.hpp

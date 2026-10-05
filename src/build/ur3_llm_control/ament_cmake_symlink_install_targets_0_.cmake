@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/ur3_llm_control")

@@ -1,5 +1,0 @@
-string action
-string object
----
-bool success
-string message

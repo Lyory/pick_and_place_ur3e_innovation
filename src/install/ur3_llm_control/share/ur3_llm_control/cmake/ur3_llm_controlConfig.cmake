@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/ament_cmake_core/ur3_llm_controlConfig.cmake

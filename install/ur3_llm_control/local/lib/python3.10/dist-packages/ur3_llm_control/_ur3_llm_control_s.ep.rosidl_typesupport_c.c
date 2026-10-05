@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/build/ur3_llm_control/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_c.c

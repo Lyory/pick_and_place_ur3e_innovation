@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_fastrtps_cpp.hpp

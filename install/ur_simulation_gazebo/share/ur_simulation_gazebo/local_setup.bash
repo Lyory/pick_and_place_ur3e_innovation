@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo/ament_cmake_environment_hooks/local_setup.bash

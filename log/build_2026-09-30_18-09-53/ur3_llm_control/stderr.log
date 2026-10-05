@@ -1,7 +1,0 @@
-/home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp: In member function ‘std::pair<bool, std::__cxx11::basic_string<char> > gazebo::PhysicalGripper::Apply(const gazebo::PhysicalGripper::Job&)’:
-/home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp:89:56: error: ‘robot’ was not declared in this scope
-   89 |       grasp_ = world_->Physics()->CreateJoint("fixed", robot);
-      |                                                        ^~~~~
-gmake[2]: *** [CMakeFiles/ur3_virtual_attachment.dir/build.make:76: CMakeFiles/ur3_virtual_attachment.dir/src/virtual_attachment.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:643: CMakeFiles/ur3_virtual_attachment.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

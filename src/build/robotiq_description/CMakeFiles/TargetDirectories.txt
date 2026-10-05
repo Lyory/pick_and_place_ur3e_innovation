@@ -1,9 +1,0 @@
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/uninstall.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/robotiq_description_uninstall.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/test.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/edit_cache.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/rebuild_cache.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/list_install_components.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/install.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/install/local.dir
-/home/quan/thuc_hanh_tuan3/src/build/robotiq_description/CMakeFiles/install/strip.dir

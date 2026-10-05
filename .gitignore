@@ -1,0 +1,4 @@
+# ROS 2 / colcon generated directories (at any depth)
+build/
+install/
+log/

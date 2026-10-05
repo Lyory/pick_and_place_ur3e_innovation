@@ -1,1 +1,0 @@
-/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/rosidl_typesupport_fastrtps_c/ur3_llm_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
