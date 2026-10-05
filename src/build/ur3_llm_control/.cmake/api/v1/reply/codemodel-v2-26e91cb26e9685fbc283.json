@@ -1,0 +1,276 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6edfab7590d0549feb8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "ur3_llm_control__py",
+					"jsonFile" : "directory-ur3_llm_control__py-084f44d831e99f81a8df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/ur3_llm_control__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "ur3_llm_control__rs",
+					"jsonFile" : "directory-ur3_llm_control__rs-5128d124f925afaeae31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/ur3_llm_control__rs",
+					"targetIndexes" : 
+					[
+						18
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "ur3_llm_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ur3_llm_control_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ur3_llm_control_egg-f5a0a54030e0a56c0f4c.json",
+					"name" : "ament_cmake_python_build_ur3_llm_control_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_ur3_llm_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_ur3_llm_control-31c11bc7009e309314ec.json",
+					"name" : "ament_cmake_python_symlink_ur3_llm_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_skills::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_skills-69a5c5784cc156620007.json",
+					"name" : "robot_skills",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7b0a613c4924c392721b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control-d5f3a6d2860624fd5da6.json",
+					"name" : "ur3_llm_control",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__cpp-5d7bda4fbdf86080a478.json",
+					"name" : "ur3_llm_control__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ur3_llm_control__py::@a852a8903204b80058ac",
+					"jsonFile" : "target-ur3_llm_control__py-a4f290045ad180f81377.json",
+					"name" : "ur3_llm_control__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_generator_c-40c42c5a173ecfa7f853.json",
+					"name" : "ur3_llm_control__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_generator_py-fa3c40e9e304cff7ae8c.json",
+					"name" : "ur3_llm_control__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_c-095dd25931fffb3b593f.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_c__pyext-047c9c69e79757f3d804.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_cpp-1df792f4bb5949ef8346.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_fastrtps_c-45210d10f855eef4e76c.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext-6d8c243f80cdef37e154.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_fastrtps_cpp-1311075561e1f660e878.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_introspection_c-00542f19d88207e1ccd2.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_introspection_c__pyext-0ef7a08762e5324fa680.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control__rosidl_typesupport_introspection_cpp-a1128f19ea845bc153d8.json",
+					"name" : "ur3_llm_control__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "ur3_llm_control__rs::@55fd80c9a7d88d1fa58a",
+					"jsonFile" : "target-ur3_llm_control__rs-ccf7344062d696826b95.json",
+					"name" : "ur3_llm_control__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_llm_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_llm_control_uninstall-ab3c394473ad551bc5bf.json",
+					"name" : "ur3_llm_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ur3_physical_gripper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ur3_physical_gripper-ecf1143f642dd54f65d5.json",
+					"name" : "ur3_physical_gripper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control",
+		"source" : "/home/quan/thuc_hanh_tuan3/src/ur3_llm_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

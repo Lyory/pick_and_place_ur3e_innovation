@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
+  <xacro:include filename="$(find ur_description)/urdf/ur.urdf.xacro"/>
+  <xacro:include filename="$(find robotiq_description)/urdf/ur_to_robotiq_adapter.urdf.xacro"/>
+  <xacro:include filename="$(find robotiq_description)/urdf/robotiq_2f_85_macro.urdf.xacro"/>
+
+  <!-- The UR adapter overlaps both the tool flange and the Robotiq base mesh,
+       so the assembly has no visual or kinematic gap. -->
+  <xacro:ur_to_robotiq prefix="" parent="tool0" child="robotiq_mount"/>
+  <xacro:robotiq_gripper name="Robotiq2F85" prefix="" parent="robotiq_mount"
+                          include_ros2_control="false" sim_gazebo="true">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:robotiq_gripper>
+  <!-- Eye-in-hand camera; Gazebo cameras look along their local +X axis. -->
+  <link name="wrist_camera_bracket">
+    <inertial><mass value="0.02"/><inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00005" iyz="0" izz="0.00005"/></inertial>
+    <visual><origin xyz="-0.075 0 -0.08"/><geometry><box size="0.15 0.012 0.012"/></geometry></visual>
+    <visual><origin xyz="0 0 -0.04"/><geometry><box size="0.012 0.012 0.08"/></geometry></visual>
+  </link>
+  <joint name="wrist_camera_bracket_joint" type="fixed"><parent link="tool0"/><child link="wrist_camera_bracket"/></joint>
+  <link name="wrist_camera_link">
+    <inertial><mass value="0.05"/><inertia ixx="0.00002" ixy="0" ixz="0" iyy="0.00002" iyz="0" izz="0.00002"/></inertial>
+    <visual><geometry><box size="0.035 0.045 0.025"/></geometry><material name="camera_black"><color rgba="0.08 0.08 0.08 1"/></material></visual>
+  </link>
+  <joint name="wrist_camera_mount" type="fixed">
+    <parent link="wrist_camera_bracket"/><child link="wrist_camera_link"/>
+    <origin xyz="-0.15 0 -0.08" rpy="0 -1.57079632679 0"/>
+  </joint>
+  <link name="wrist_camera_optical_frame"/>
+  <joint name="wrist_camera_optical_joint" type="fixed">
+    <parent link="wrist_camera_link"/><child link="wrist_camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.57079632679 0 -1.57079632679"/>
+  </joint>
+  <gazebo reference="wrist_camera_link">
+    <sensor name="wrist_camera" type="camera">
+      <always_on>true</always_on><update_rate>15</update_rate>
+      <camera><horizontal_fov>2.2</horizontal_fov><image><width>960</width><height>720</height><format>R8G8B8</format></image><clip><near>0.03</near><far>3</far></clip></camera>
+      <plugin name="wrist_ros_camera" filename="libgazebo_ros_camera.so">
+        <ros><remapping>image_raw:=/task_camera/image_raw</remapping><remapping>camera_info:=/task_camera/camera_info</remapping></ros>
+        <camera_name>task_camera</camera_name><frame_name>wrist_camera_optical_frame</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+</robot>

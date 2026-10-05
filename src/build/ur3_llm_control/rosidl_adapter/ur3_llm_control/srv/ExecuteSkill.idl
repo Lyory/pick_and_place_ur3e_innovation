@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ur3_llm_control/srv/ExecuteSkill.srv
+// generated code does not contain a copyright notice
+
+
+module ur3_llm_control {
+  module srv {
+    struct ExecuteSkill_Request {
+      string skill;
+
+      string object;
+
+      string zone;
+    };
+    struct ExecuteSkill_Response {
+      boolean success;
+
+      string status;
+
+      string message;
+    };
+  };
+};

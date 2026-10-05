@@ -1,0 +1,1 @@
+/home/quan/thuc_hanh_tuan3/build/ur3_llm_control/rosidl_generator_py/ur3_llm_control/__init__.py

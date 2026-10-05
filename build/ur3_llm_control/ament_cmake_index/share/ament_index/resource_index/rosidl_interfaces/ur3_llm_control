@@ -1,0 +1,12 @@
+srv/ExecuteSkill.idl
+srv/ExecuteSkill.srv
+srv/ExecuteSkill_Request.msg
+srv/ExecuteSkill_Response.msg
+srv/GetWorldState.idl
+srv/GetWorldState.srv
+srv/GetWorldState_Request.msg
+srv/GetWorldState_Response.msg
+srv/SetAttachment.idl
+srv/SetAttachment.srv
+srv/SetAttachment_Request.msg
+srv/SetAttachment_Response.msg

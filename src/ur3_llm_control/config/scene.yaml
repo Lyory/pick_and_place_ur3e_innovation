@@ -1,0 +1,26 @@
+frame_id: base_link
+robot_base_height: 0.74
+table:
+  x: 0.43
+  y: 0.0
+  z: 0.72
+  size: [0.64, 0.84, 0.04]
+objects:
+  red_cube: {x: 0.42, y: -0.18, z: 0.76}
+  yellow_cube: {x: 0.48, y: -0.10, z: 0.76}
+  blue_cube: {x: 0.35, y: -0.13, z: 0.76}
+  green_cube: {x: 0.48, y: 0.15, z: 0.76}
+  purple_cube: {x: 0.40, y: 0.12, z: 0.76}
+zones:
+  zone_a: {x: 0.30, y: -0.27, z: 0.7425}
+  zone_b: {x: 0.30, y: 0.00, z: 0.7425}
+  zone_c: {x: 0.30, y: 0.27, z: 0.7425}
+  buffer: {x: 0.48, y: 0.025, z: 0.7425}
+  temp_1: {x: 0.26, y: -0.13, z: 0.7425}
+  temp_2: {x: 0.26, y: 0.13, z: 0.7425}
+cube_size: 0.04
+zone_size: [0.14, 0.14, 0.005]
+zone_wall_thickness: 0.01
+zone_wall_height: 0.035
+approach_height: 0.23
+grasp_offset: 0.17

@@ -1,0 +1,7 @@
+---
+string[] objects
+string[] locations
+string held_object
+float64[] x
+float64[] y
+bool camera_ready

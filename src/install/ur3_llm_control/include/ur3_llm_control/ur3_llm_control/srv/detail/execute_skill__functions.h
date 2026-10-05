@@ -1,0 +1,1 @@
+/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/rosidl_generator_c/ur3_llm_control/srv/detail/execute_skill__functions.h

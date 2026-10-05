@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000164] (-) JobUnselected: {'identifier': 'ur_simulation_gazebo'}
+[0.000333] (ur3_llm_control) JobQueued: {'identifier': 'ur3_llm_control', 'dependencies': OrderedDict([('ur_simulation_gazebo', '/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo')])}
+[0.000448] (ur3_llm_control) JobStarted: {'identifier': 'ur3_llm_control'}
+[0.008697] (ur3_llm_control) JobProgress: {'identifier': 'ur3_llm_control', 'progress': 'cmake'}
+[0.009587] (ur3_llm_control) JobProgress: {'identifier': 'ur3_llm_control', 'progress': 'build'}
+[0.010469] (ur3_llm_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control', '--', '-j16', '-l16'], 'cwd': '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/quan/thuc_hanh_tuan3'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'x11'), ('DEBUG', 'release'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/quan'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('VSCODE_IPC_HOOK', '/run/user/1000/vscode-25f63113-1.13-main.sock'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('PAGER', 'cat'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1554'), ('LC_CTYPE', 'C.UTF-8'), ('SYSTEMD_EXEC_PID', '1864'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4706'), ('NVM_DIR', '/home/quan/.nvm'), ('VSCODE_CRASH_REPORTER_PROCESS_TYPE', 'extensionHost'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('CODEX_PERMISSION_PROFILE', ':workspace'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:3072'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.local/bin:/home/quan/.codex/tmp/arg0/codex-arg0L1mhWF:/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/quan/.vscode/extensions/openai.chatgpt-26.917.62051-linux-x64/bin/linux-x86_64'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1837,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1837'), ('CODEX_VERSION', '0.155.0-alpha.16.3'), ('CODEX_SESSION_ID', '01a0f1e4-0d9f-7af3-9ea2-b9bcdb897c5f'), ('INVOCATION_ID', 'f8d2000994404a2e8eb7d350794072d8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('GH_PAGER', 'cat'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:4704ea88-9bf4-471d-8178-8c6a0d9b5eec'), ('QT_ACCESSIBILITY', '1'), ('ELECTRON_RUN_AS_NODE', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '01a0f1e4-0d9f-7af3-9ea2-b9bcdb897c5f'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control'), ('VSCODE_CLI', '1'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('VSCODE_CODE_CACHE_PATH', '/home/quan/.config/Code/CachedData/645f29cc3176500b4b5762ba887cf2a7f0ffdf2c'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('ELECTRON_NO_ATTACH_CONSOLE', '1'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble'), ('VSCODE_PID', '6112')]), 'shell': False}
+[0.072975] (ur3_llm_control) StdoutLine: {'line': b'[  1%] Built target ur3_llm_control__cpp\n'}
+[0.074529] (ur3_llm_control) StdoutLine: {'line': b'[ 11%] Built target ur3_llm_control__rosidl_generator_c\n'}
+[0.077247] (ur3_llm_control) StdoutLine: {'line': b'[ 13%] Built target ur3_llm_control__rs\n'}
+[0.085838] (ur3_llm_control) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_symlink_ur3_llm_control\n'}
+[0.095945] (ur3_llm_control) StdoutLine: {'line': b'[ 32%] Built target ur3_llm_control__rosidl_typesupport_c\n'}
+[0.096222] (ur3_llm_control) StdoutLine: {'line': b'[ 32%] Built target ur3_llm_control__rosidl_typesupport_introspection_cpp\n'}
+[0.099477] (ur3_llm_control) StdoutLine: {'line': b'[ 42%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c\n'}
+[0.099811] (-) TimerEvent: {}
+[0.101444] (ur3_llm_control) StdoutLine: {'line': b'[ 51%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.103017] (ur3_llm_control) StdoutLine: {'line': b'[ 71%] Built target ur3_llm_control__rosidl_typesupport_introspection_c\n'}
+[0.103251] (ur3_llm_control) StdoutLine: {'line': b'[ 71%] Built target ur3_llm_control__rosidl_typesupport_cpp\n'}
+[0.124049] (ur3_llm_control) StdoutLine: {'line': b'[ 71%] Built target ur3_llm_control\n'}
+[0.146113] (ur3_llm_control) StdoutLine: {'line': b'[ 73%] Built target ur3_llm_control__py\n'}
+[0.155596] (ur3_llm_control) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target ur3_virtual_attachment\n'}
+[0.163478] (ur3_llm_control) StdoutLine: {'line': b'[ 76%] Built target robot_skills\n'}
+[0.178923] (ur3_llm_control) StdoutLine: {'line': b'[ 84%] Built target ur3_llm_control__rosidl_generator_py\n'}
+[0.182212] (ur3_llm_control) StdoutLine: {'line': b'[ 86%] Building CXX object CMakeFiles/ur3_virtual_attachment.dir/src/virtual_attachment.cpp.o\n'}
+[0.199921] (-) TimerEvent: {}
+[0.206807] (ur3_llm_control) StdoutLine: {'line': b'[ 94%] Built target ur3_llm_control__rosidl_typesupport_introspection_c__pyext\n'}
+[0.207015] (ur3_llm_control) StdoutLine: {'line': b'[ 94%] Built target ur3_llm_control__rosidl_typesupport_c__pyext\n'}
+[0.209914] (ur3_llm_control) StdoutLine: {'line': b'[ 98%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.300018] (-) TimerEvent: {}
+[0.334215] (ur3_llm_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.334695] (ur3_llm_control) StdoutLine: {'line': b'writing ur3_llm_control.egg-info/PKG-INFO\n'}
+[0.334860] (ur3_llm_control) StdoutLine: {'line': b'writing dependency_links to ur3_llm_control.egg-info/dependency_links.txt\n'}
+[0.334936] (ur3_llm_control) StdoutLine: {'line': b'writing top-level names to ur3_llm_control.egg-info/top_level.txt\n'}
+[0.336676] (ur3_llm_control) StdoutLine: {'line': b"reading manifest file 'ur3_llm_control.egg-info/SOURCES.txt'\n"}
+[0.337074] (ur3_llm_control) StdoutLine: {'line': b"writing manifest file 'ur3_llm_control.egg-info/SOURCES.txt'\n"}
+[0.361055] (ur3_llm_control) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_ur3_llm_control_egg\n'}
+[0.400142] (-) TimerEvent: {}
+[0.500354] (-) TimerEvent: {}
+[0.600542] (-) TimerEvent: {}
+[0.700733] (-) TimerEvent: {}
+[0.800936] (-) TimerEvent: {}
+[0.901156] (-) TimerEvent: {}
+[1.001483] (-) TimerEvent: {}
+[1.101669] (-) TimerEvent: {}
+[1.202059] (-) TimerEvent: {}
+[1.302460] (-) TimerEvent: {}
+[1.402637] (-) TimerEvent: {}
+[1.502861] (-) TimerEvent: {}
+[1.603091] (-) TimerEvent: {}
+[1.703327] (-) TimerEvent: {}
+[1.803512] (-) TimerEvent: {}
+[1.903731] (-) TimerEvent: {}
+[2.004056] (-) TimerEvent: {}
+[2.104274] (-) TimerEvent: {}
+[2.204601] (-) TimerEvent: {}
+[2.304844] (-) TimerEvent: {}
+[2.405193] (-) TimerEvent: {}
+[2.505379] (-) TimerEvent: {}
+[2.605572] (-) TimerEvent: {}
+[2.705749] (-) TimerEvent: {}
+[2.805947] (-) TimerEvent: {}
+[2.906167] (-) TimerEvent: {}
+[3.006480] (-) TimerEvent: {}
+[3.106832] (-) TimerEvent: {}
+[3.206986] (-) TimerEvent: {}
+[3.307170] (-) TimerEvent: {}
+[3.407359] (-) TimerEvent: {}
+[3.507557] (-) TimerEvent: {}
+[3.607734] (-) TimerEvent: {}
+[3.707947] (-) TimerEvent: {}
+[3.808142] (-) TimerEvent: {}
+[3.908434] (-) TimerEvent: {}
+[4.008677] (-) TimerEvent: {}
+[4.108933] (-) TimerEvent: {}
+[4.209156] (-) TimerEvent: {}
+[4.309332] (-) TimerEvent: {}
+[4.409554] (-) TimerEvent: {}
+[4.509759] (-) TimerEvent: {}
+[4.609935] (-) TimerEvent: {}
+[4.710153] (-) TimerEvent: {}
+[4.810333] (-) TimerEvent: {}
+[4.910576] (-) TimerEvent: {}
+[5.010853] (-) TimerEvent: {}
+[5.111123] (-) TimerEvent: {}
+[5.211376] (-) TimerEvent: {}
+[5.311679] (-) TimerEvent: {}
+[5.411977] (-) TimerEvent: {}
+[5.512222] (-) TimerEvent: {}
+[5.612423] (-) TimerEvent: {}
+[5.712637] (-) TimerEvent: {}
+[5.812866] (-) TimerEvent: {}
+[5.913138] (-) TimerEvent: {}
+[6.013371] (-) TimerEvent: {}
+[6.113570] (-) TimerEvent: {}
+[6.213762] (-) TimerEvent: {}
+[6.313944] (-) TimerEvent: {}
+[6.414162] (-) TimerEvent: {}
+[6.514378] (-) TimerEvent: {}
+[6.614570] (-) TimerEvent: {}
+[6.714834] (-) TimerEvent: {}
+[6.815017] (-) TimerEvent: {}
+[6.827668] (ur3_llm_control) StderrLine: {'line': b'/home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp: In member function \xe2\x80\x98std::pair<bool, std::__cxx11::basic_string<char> > gazebo::PhysicalGripper::Apply(const gazebo::PhysicalGripper::Job&)\xe2\x80\x99:\n'}
+[6.827916] (ur3_llm_control) StderrLine: {'line': b'/home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp:89:56: error: \xe2\x80\x98robot\xe2\x80\x99 was not declared in this scope\n'}
+[6.828012] (ur3_llm_control) StderrLine: {'line': b'   89 |       grasp_ = world_->Physics()->CreateJoint("fixed", robot);\n'}
+[6.828096] (ur3_llm_control) StderrLine: {'line': b'      |                                                        ^~~~~\n'}
+[6.915123] (-) TimerEvent: {}
+[7.015408] (-) TimerEvent: {}
+[7.115590] (-) TimerEvent: {}
+[7.215802] (-) TimerEvent: {}
+[7.316015] (-) TimerEvent: {}
+[7.416175] (-) TimerEvent: {}
+[7.516337] (-) TimerEvent: {}
+[7.616510] (-) TimerEvent: {}
+[7.716705] (-) TimerEvent: {}
+[7.816882] (-) TimerEvent: {}
+[7.917090] (-) TimerEvent: {}
+[8.017283] (-) TimerEvent: {}
+[8.117454] (-) TimerEvent: {}
+[8.217632] (-) TimerEvent: {}
+[8.317839] (-) TimerEvent: {}
+[8.417998] (-) TimerEvent: {}
+[8.478603] (ur3_llm_control) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ur3_virtual_attachment.dir/build.make:76: CMakeFiles/ur3_virtual_attachment.dir/src/virtual_attachment.cpp.o] Error 1\n'}
+[8.478924] (ur3_llm_control) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:643: CMakeFiles/ur3_virtual_attachment.dir/all] Error 2\n'}
+[8.479069] (ur3_llm_control) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.481300] (ur3_llm_control) CommandEnded: {'returncode': 2}
+[8.491742] (ur3_llm_control) JobEnded: {'identifier': 'ur3_llm_control', 'rc': 2}
+[8.502231] (-) EventReactorShutdown: {}

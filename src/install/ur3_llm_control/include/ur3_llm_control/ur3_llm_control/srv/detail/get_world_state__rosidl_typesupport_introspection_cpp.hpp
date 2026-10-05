@@ -1,0 +1,1 @@
+/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_introspection_cpp.hpp

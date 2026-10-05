@@ -1,0 +1,103 @@
+[0.011s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control': AMENT_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/robotiq_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/robotiq_description:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/thuc_hanh_tuan3/src/ur3_llm_control -DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/install/ur3_llm_control
+[0.026s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.135s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.143s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.169s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.171s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.178s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.188s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.200s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.230s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.232s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.322s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.368s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.376s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.385s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.398s] -- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.410s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.521s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.547s] -- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)
+[0.549s] -- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.561s] -- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.597s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.621s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.718s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[0.742s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[0.759s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[0.780s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.812s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.825s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.838s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.841s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.848s] -- Searching for dependencies of ignition-math6
+[0.851s] -- Looking for OGRE...
+[0.856s] -- Found Ogre Ghadamon (1.9.0)
+[0.857s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.864s] -- Looking for OGRE_Paging...
+[0.864s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.864s] -- Looking for OGRE_Terrain...
+[0.864s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.864s] -- Looking for OGRE_Property...
+[0.864s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.864s] -- Looking for OGRE_RTShaderSystem...
+[0.864s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.864s] -- Looking for OGRE_Volume...
+[0.865s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.865s] -- Looking for OGRE_Overlay...
+[0.865s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.950s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.950s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.951s] -- Searching for dependencies of ignition-transport8
+[0.965s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.974s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.978s] -- Checking for module 'libzmq >= 4'
+[0.998s] --   Found libzmq , version 4.3.4
+[1.068s] -- Checking for module 'uuid'
+[1.091s] --   Found uuid, version 2.37.2
+[1.150s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.151s] -- Searching for dependencies of ignition-msgs5
+[1.169s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.176s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.176s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.177s] -- Searching for dependencies of ignition-common3
+[1.177s] -- Looking for dlfcn.h - found
+[1.177s] -- Looking for libdl - found
+[1.189s] -- Searching for <ignition-common3> component [graphics]
+[1.189s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.190s] -- Searching for dependencies of ignition-common3-graphics
+[1.190s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.191s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.191s] -- Searching for dependencies of ignition-fuel_tools4
+[1.223s] -- Checking for module 'jsoncpp'
+[1.240s] --   Found jsoncpp, version 1.9.5
+[1.301s] -- Checking for module 'libzip'
+[1.324s] --   Found libzip, version 1.7.3
+[1.378s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.379s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.380s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.386s] -- Gazebo version: 11.10
+[1.388s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.602s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.857s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.947s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.964s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.981s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.981s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.981s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.047s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[2.048s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[2.048s]   rosidl_target_interfaces()
+[2.048s] Call Stack (most recent call first):
+[2.048s]   CMakeLists.txt:27 (rosidl_target_interfaces)
+[2.048s] 
+[2.048s] [0m
+[2.052s] [0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[2.053s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[2.053s]   rosidl_target_interfaces()
+[2.053s] Call Stack (most recent call first):
+[2.053s]   CMakeLists.txt:32 (rosidl_target_interfaces)
+[2.053s] 
+[2.053s] [0m
+[2.061s] -- Configuring done
+[2.129s] -- Generating done
+[2.141s] -- Build files have been written to: /home/quan/thuc_hanh_tuan3/build/ur3_llm_control

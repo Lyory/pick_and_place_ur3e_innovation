@@ -1,0 +1,35 @@
+[0.011s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16
+[0.073s] [  1%] Built target ur3_llm_control__cpp
+[0.074s] [ 11%] Built target ur3_llm_control__rosidl_generator_c
+[0.077s] [ 13%] Built target ur3_llm_control__rs
+[0.086s] [ 13%] Built target ament_cmake_python_symlink_ur3_llm_control
+[0.096s] [ 32%] Built target ur3_llm_control__rosidl_typesupport_c
+[0.096s] [ 32%] Built target ur3_llm_control__rosidl_typesupport_introspection_cpp
+[0.099s] [ 42%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c
+[0.101s] [ 51%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_cpp
+[0.103s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_introspection_c
+[0.103s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_cpp
+[0.124s] [ 71%] Built target ur3_llm_control
+[0.146s] [ 73%] Built target ur3_llm_control__py
+[0.155s] Consolidate compiler generated dependencies of target ur3_virtual_attachment
+[0.163s] [ 76%] Built target robot_skills
+[0.179s] [ 84%] Built target ur3_llm_control__rosidl_generator_py
+[0.182s] [ 86%] Building CXX object CMakeFiles/ur3_virtual_attachment.dir/src/virtual_attachment.cpp.o
+[0.207s] [ 94%] Built target ur3_llm_control__rosidl_typesupport_introspection_c__pyext
+[0.207s] [ 94%] Built target ur3_llm_control__rosidl_typesupport_c__pyext
+[0.210s] [ 98%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext
+[0.334s] running egg_info
+[0.334s] writing ur3_llm_control.egg-info/PKG-INFO
+[0.334s] writing dependency_links to ur3_llm_control.egg-info/dependency_links.txt
+[0.335s] writing top-level names to ur3_llm_control.egg-info/top_level.txt
+[0.336s] reading manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[0.337s] writing manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[0.361s] [ 98%] Built target ament_cmake_python_build_ur3_llm_control_egg
+[6.827s] /home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp: In member function ‘std::pair<bool, std::__cxx11::basic_string<char> > gazebo::PhysicalGripper::Apply(const gazebo::PhysicalGripper::Job&)’:
+[6.828s] /home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/virtual_attachment.cpp:89:56: error: ‘robot’ was not declared in this scope
+[6.828s]    89 |       grasp_ = world_->Physics()->CreateJoint("fixed", robot);
+[6.828s]       |                                                        ^~~~~
+[8.478s] gmake[2]: *** [CMakeFiles/ur3_virtual_attachment.dir/build.make:76: CMakeFiles/ur3_virtual_attachment.dir/src/virtual_attachment.cpp.o] Error 1
+[8.479s] gmake[1]: *** [CMakeFiles/Makefile2:643: CMakeFiles/ur3_virtual_attachment.dir/all] Error 2
+[8.479s] gmake: *** [Makefile:146: all] Error 2
+[8.481s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control' returned '2': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16

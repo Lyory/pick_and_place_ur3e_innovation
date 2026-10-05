@@ -1,0 +1,53 @@
+[0.009s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/thuc_hanh_tuan3/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo
+[0.109s] -- The C compiler identification is GNU 11.4.0
+[0.174s] -- The CXX compiler identification is GNU 11.4.0
+[0.181s] -- Detecting C compiler ABI info
+[0.242s] -- Detecting C compiler ABI info - done
+[0.248s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.249s] -- Detecting C compile features
+[0.250s] -- Detecting C compile features - done
+[0.253s] -- Detecting CXX compiler ABI info
+[0.330s] -- Detecting CXX compiler ABI info - done
+[0.338s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.338s] -- Detecting CXX compile features
+[0.338s] -- Detecting CXX compile features - done
+[0.343s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.454s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.528s] -- Found launch_testing_ament_cmake: 1.0.15 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[0.530s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.547s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.561s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.561s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.562s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.562s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.579s] -- Found PythonExtra: .so  
+[0.581s] -- Found ament_cmake_pytest: 1.3.14 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[0.628s] -- Configuring done
+[0.630s] -- Generating done
+[0.631s] -- Build files have been written to: /home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo
+[0.635s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/thuc_hanh_tuan3/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo
+[0.636s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo -- -j16 -l16
+[0.671s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo -- -j16 -l16
+[0.678s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo
+[0.685s] -- Install configuration: ""
+[0.685s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config
+[0.685s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+[0.686s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml
+[0.688s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/thuc_hanh_tuan3/build/ur_simulation_gazebo

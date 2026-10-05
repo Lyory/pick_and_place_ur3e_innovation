@@ -1,0 +1,386 @@
+[0.010s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16
+[0.037s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.176s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.181s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.206s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.207s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.212s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.228s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.252s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.253s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.339s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.376s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.384s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.393s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.410s] -- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.419s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.507s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.527s] -- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)
+[0.528s] -- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.548s] -- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.591s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.610s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.697s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[0.719s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[0.734s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[0.755s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.778s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.789s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.797s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.798s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.803s] -- Searching for dependencies of ignition-math6
+[0.804s] -- Looking for OGRE...
+[0.810s] -- Found Ogre Ghadamon (1.9.0)
+[0.810s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.818s] -- Looking for OGRE_Paging...
+[0.818s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.818s] -- Looking for OGRE_Terrain...
+[0.818s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.818s] -- Looking for OGRE_Property...
+[0.818s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.818s] -- Looking for OGRE_RTShaderSystem...
+[0.818s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.818s] -- Looking for OGRE_Volume...
+[0.818s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.818s] -- Looking for OGRE_Overlay...
+[0.819s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.910s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.912s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.913s] -- Searching for dependencies of ignition-transport8
+[0.930s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.940s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.946s] -- Checking for module 'libzmq >= 4'
+[0.960s] --   Found libzmq , version 4.3.4
+[1.014s] -- Checking for module 'uuid'
+[1.030s] --   Found uuid, version 2.37.2
+[1.073s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.073s] -- Searching for dependencies of ignition-msgs5
+[1.089s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.097s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.098s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.098s] -- Searching for dependencies of ignition-common3
+[1.098s] -- Looking for dlfcn.h - found
+[1.098s] -- Looking for libdl - found
+[1.109s] -- Searching for <ignition-common3> component [graphics]
+[1.109s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.109s] -- Searching for dependencies of ignition-common3-graphics
+[1.109s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.110s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.110s] -- Searching for dependencies of ignition-fuel_tools4
+[1.150s] -- Checking for module 'jsoncpp'
+[1.174s] --   Found jsoncpp, version 1.9.5
+[1.214s] -- Checking for module 'libzip'
+[1.228s] --   Found libzip, version 1.7.3
+[1.263s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.263s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.264s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.265s] -- Gazebo version: 11.10
+[1.265s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.498s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.766s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.865s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.883s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.901s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.901s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.901s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.980s] CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.981s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.981s]   rosidl_target_interfaces()
+[1.981s] Call Stack (most recent call first):
+[1.981s]   CMakeLists.txt:27 (rosidl_target_interfaces)
+[1.981s] 
+[1.981s] 
+[1.984s] CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.984s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.984s]   rosidl_target_interfaces()
+[1.984s] Call Stack (most recent call first):
+[1.984s]   CMakeLists.txt:32 (rosidl_target_interfaces)
+[1.984s] 
+[1.984s] 
+[1.989s] -- Configuring done
+[2.038s] -- Generating done
+[2.053s] -- Build files have been written to: /home/quan/thuc_hanh_tuan3/build/ur3_llm_control
+[2.085s] [  1%] Generating C code for ROS interfaces
+[2.096s] [  3%] Generating Rust code for ROS interfaces
+[2.096s] [  5%] Generating C++ code for ROS interfaces
+[2.106s] [  5%] Built target ament_cmake_python_symlink_ur3_llm_control
+[2.385s] running egg_info
+[2.386s] writing ur3_llm_control.egg-info/PKG-INFO
+[2.386s] writing dependency_links to ur3_llm_control.egg-info/dependency_links.txt
+[2.386s] writing top-level names to ur3_llm_control.egg-info/top_level.txt
+[2.388s] reading manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[2.389s] writing manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[2.430s] [  5%] Built target ament_cmake_python_build_ur3_llm_control_egg
+[2.455s] [  5%] Built target ur3_llm_control__rs
+[2.473s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_c
+[2.484s] [ 11%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/execute_skill__functions.c.o
+[2.484s] [ 11%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/set_attachment__functions.c.o
+[2.484s] [ 11%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/get_world_state__functions.c.o
+[2.489s] [ 11%] Built target ur3_llm_control__cpp
+[2.499s] [ 15%] Generating C++ type support for eProsima Fast-RTPS
+[2.499s] [ 15%] Generating C++ type support dispatch for ROS interfaces
+[2.502s] [ 17%] Generating C++ introspection for ROS interfaces
+[2.550s] [ 19%] Linking C shared library libur3_llm_control__rosidl_generator_c.so
+[2.593s] [ 19%] Built target ur3_llm_control__rosidl_generator_c
+[2.609s] [ 25%] Generating C type support for eProsima Fast-RTPS
+[2.609s] [ 25%] Generating C type support dispatch for ROS interfaces
+[2.609s] [ 25%] Generating C introspection for ROS interfaces
+[2.826s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_cpp
+[2.837s] [ 26%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/execute_skill__type_support.cpp.o
+[2.839s] [ 28%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/get_world_state__type_support.cpp.o
+[2.841s] [ 30%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/set_attachment__type_support.cpp.o
+[2.866s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_cpp
+[2.866s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_cpp
+[2.878s] [ 32%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/set_attachment__type_support.cpp.o
+[2.879s] [ 34%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/execute_skill__type_support.cpp.o
+[2.880s] [ 36%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/execute_skill__type_support.cpp.o
+[2.881s] [ 38%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/set_attachment__type_support.cpp.o
+[2.881s] [ 40%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/get_world_state__type_support.cpp.o
+[2.884s] [ 42%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/get_world_state__type_support.cpp.o
+[2.947s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c
+[2.969s] [ 44%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/execute_skill__type_support.cpp.o
+[2.976s] [ 46%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/set_attachment__type_support.cpp.o
+[2.978s] [ 48%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/get_world_state__type_support.cpp.o
+[2.990s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c
+[3.019s] [ 50%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/set_attachment__type_support.c.o
+[3.023s] [ 51%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/get_world_state__type_support.c.o
+[3.027s] [ 53%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/execute_skill__type_support.c.o
+[3.046s] [ 55%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_c.so
+[3.116s] [ 57%] Linking C shared library libur3_llm_control__rosidl_typesupport_introspection_c.so
+[3.131s] [ 57%] Built target ur3_llm_control__rosidl_typesupport_c
+[3.154s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c
+[3.169s] [ 57%] Built target ur3_llm_control__rosidl_typesupport_introspection_c
+[3.175s] [ 59%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/get_world_state__type_support_c.cpp.o
+[3.175s] [ 61%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/execute_skill__type_support_c.cpp.o
+[3.176s] [ 63%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/set_attachment__type_support_c.cpp.o
+[3.285s] [ 65%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_cpp.so
+[3.345s] [ 65%] Built target ur3_llm_control__rosidl_typesupport_cpp
+[3.489s] [ 67%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_introspection_cpp.so
+[3.570s] [ 69%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_fastrtps_cpp.so
+[3.573s] [ 69%] Built target ur3_llm_control__rosidl_typesupport_introspection_cpp
+[3.617s] [ 71%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_fastrtps_c.so
+[3.647s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_cpp
+[3.690s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c
+[3.710s] [ 71%] Built target ur3_llm_control
+[3.727s] Consolidate compiler generated dependencies of target robot_skills
+[3.731s] [ 73%] Generating Python code for ROS interfaces
+[3.735s] [ 75%] Building CXX object CMakeFiles/ur3_physical_gripper.dir/src/physical_gripper.cpp.o
+[3.745s] [ 76%] Building CXX object CMakeFiles/robot_skills.dir/src/robot_skills.cpp.o
+[4.283s] [ 76%] Built target ur3_llm_control__py
+[4.299s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_py
+[4.310s] [ 78%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_set_attachment_s.c.o
+[4.311s] [ 80%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_execute_skill_s.c.o
+[4.313s] [ 82%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_get_world_state_s.c.o
+[4.457s] [ 84%] Linking C shared library rosidl_generator_py/ur3_llm_control/libur3_llm_control__rosidl_generator_py.so
+[4.501s] [ 84%] Built target ur3_llm_control__rosidl_generator_py
+[4.517s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c__pyext
+[4.517s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c__pyext
+[4.517s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext
+[4.528s] [ 86%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_introspection_c.c.o
+[4.531s] [ 90%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[4.531s] [ 90%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_c.c.o
+[4.618s] [ 92%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.631s] [ 94%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.653s] [ 94%] Built target ur3_llm_control__rosidl_typesupport_introspection_c__pyext
+[4.674s] [ 96%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.678s] [ 96%] Built target ur3_llm_control__rosidl_typesupport_c__pyext
+[4.709s] [ 96%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext
+[13.622s] [ 98%] Linking CXX shared library libur3_physical_gripper.so
+[13.976s] [ 98%] Built target ur3_physical_gripper
+[21.554s] [100%] Linking CXX executable robot_skills
+[22.577s] [100%] Built target robot_skills
+[22.586s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control' returned '0': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16
+[22.596s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/thuc_hanh_tuan3/build/ur3_llm_control
+[22.600s] -- Install configuration: ""
+[22.601s] -- Execute custom install script
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ament_index/resource_index/rosidl_interfaces/ur3_llm_control
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_generator_c__visibility_control.h
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__functions.h
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__struct.h
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__type_support.h
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__functions.h
+[22.601s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__struct.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__type_support.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__functions.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__struct.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__type_support.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/execute_skill.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/get_world_state.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/set_attachment.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/library_path.sh
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/library_path.dsv
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_fastrtps_c.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_fastrtps_c.h
+[22.602s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_fastrtps_c.h
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_generator_cpp__visibility_control.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__builder.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__struct.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__traits.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__type_support.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__builder.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__struct.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__traits.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__type_support.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__builder.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__struct.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__traits.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__type_support.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/execute_skill.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/get_world_state.hpp
+[22.603s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/set_attachment.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_fastrtps_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_fastrtps_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_fastrtps_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_introspection_c.h
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_introspection_c.h
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_introspection_c.h
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_introspection_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_introspection_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_introspection_cpp.hpp
+[22.604s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/pythonpath.sh
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/pythonpath.dsv
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/PKG-INFO
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/SOURCES.txt
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/dependency_links.txt
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/top_level.txt
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/__init__.py
+[22.605s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_c.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_fastrtps_c.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_introspection_c.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/libur3_llm_control__rosidl_generator_py.so
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/__init__.py
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_execute_skill.py
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_execute_skill_s.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_get_world_state.py
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_get_world_state_s.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_set_attachment.py
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_set_attachment_s.c
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[22.606s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/rust/Cargo.toml
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/rust/build.rs
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/rust/src/lib.rs
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/rust/src/srv.rs
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/rust/src/srv/rmw.rs
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill.idl
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment.idl
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState.idl
+[22.607s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill.srv
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill_Request.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill_Response.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment.srv
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment_Request.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment_Response.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState.srv
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState_Request.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState_Response.msg
+[22.608s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/robot_skills
+[22.608s] -- Symlinking: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_physical_gripper.so
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/llm_planner.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/task_validator.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/skill_executor.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/task_manager.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/camera_state.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/ur3_llm_control/demo_occupied_zone.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/launch/llm_robot.launch.py
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/config/home_joints.yaml
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/config/scene.yaml
+[22.615s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/config/staging_joints.yaml
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/config/student_config.yaml
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/config/ur_controllers.yaml
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/prompt/planner_prompt.txt
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/worlds/assignment2.world
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/blue_cube/model.config
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/blue_cube/model.sdf
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/buffer/model.config
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/buffer/model.sdf
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/green_cube/model.config
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/green_cube/model.sdf
+[22.616s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/purple_cube/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/purple_cube/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/red_cube/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/red_cube/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_gripper/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_gripper/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_table/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_table/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/yellow_cube/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/yellow_cube/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_a/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_a/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_b/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_b/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_c/model.config
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/models/zone_c/model.sdf
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ament_index/resource_index/package_run_dependencies/ur3_llm_control
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ament_index/resource_index/parent_prefix_path/ur3_llm_control
+[22.617s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/ament_prefix_path.sh
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/ament_prefix_path.dsv
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/path.sh
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/environment/path.dsv
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/local_setup.bash
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/local_setup.sh
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/local_setup.zsh
+[22.618s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/local_setup.dsv
+[22.618s] -- Symlinking: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/package.dsv
+[22.626s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ament_index/resource_index/packages/ur3_llm_control
+[22.626s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_libraries-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_targets-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_controlConfig.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_controlConfig-version.cmake
+[22.627s] -- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/package.xml
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_c.so
+[22.628s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_c.so" to ""
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_c.so
+[22.628s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_c.so" to ""
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_cpp.so
+[22.628s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_c.so
+[22.628s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_c.so" to ""
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_c.so
+[22.628s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_c.so" to ""
+[22.628s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_cpp.so
+[22.629s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_cpp.so" to ""
+[22.629s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_cpp.so
+[22.629s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_cpp.so" to ""
+[22.662s] Listing '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control'...
+[22.662s] Compiling '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/__init__.py'...
+[22.662s] Listing '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv'...
+[22.662s] Compiling '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/__init__.py'...
+[22.662s] Compiling '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_execute_skill.py'...
+[22.662s] Compiling '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_get_world_state.py'...
+[22.662s] Compiling '/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_set_attachment.py'...
+[22.676s] -- Installing: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_py.so
+[22.676s] -- Set runtime path of "/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_py.so" to ""
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cppExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cppExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cppExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cppExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cppExport-noconfig.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_pyExport.cmake
+[22.677s] -- Up-to-date: /home/quan/thuc_hanh_tuan3/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_pyExport-noconfig.cmake
+[22.678s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control' returned '0': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --install /home/quan/thuc_hanh_tuan3/build/ur3_llm_control

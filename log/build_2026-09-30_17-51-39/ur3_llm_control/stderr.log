@@ -1,0 +1,19 @@
+CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:27 (rosidl_target_interfaces)
+
+
+CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+  Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+  rosidl_target_interfaces()
+Call Stack (most recent call first):
+  CMakeLists.txt:32 (rosidl_target_interfaces)
+
+
+failed to create symbolic link '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control/ament_cmake_python/ur3_llm_control/ur3_llm_control' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_ur3_llm_control.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_ur3_llm_control] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:444: CMakeFiles/ament_cmake_python_symlink_ur3_llm_control.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,199 @@
+[0.010s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16
+[0.048s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.134s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.138s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.156s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.157s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.161s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.167s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.174s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.193s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.194s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.267s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.312s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.317s] -- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.325s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.336s] -- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[0.343s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.421s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[0.437s] -- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)
+[0.438s] -- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.448s] -- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)
+[0.473s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.489s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.565s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[0.583s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[0.596s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[0.613s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.638s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.649s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[0.656s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.657s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.660s] -- Searching for dependencies of ignition-math6
+[0.661s] -- Looking for OGRE...
+[0.665s] -- Found Ogre Ghadamon (1.9.0)
+[0.665s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.672s] -- Looking for OGRE_Paging...
+[0.672s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.672s] -- Looking for OGRE_Terrain...
+[0.672s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.672s] -- Looking for OGRE_Property...
+[0.672s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.672s] -- Looking for OGRE_RTShaderSystem...
+[0.673s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.673s] -- Looking for OGRE_Volume...
+[0.673s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.673s] -- Looking for OGRE_Overlay...
+[0.673s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.745s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.745s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.745s] -- Searching for dependencies of ignition-transport8
+[0.758s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.771s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.780s] -- Checking for module 'libzmq >= 4'
+[0.798s] --   Found libzmq , version 4.3.4
+[0.853s] -- Checking for module 'uuid'
+[0.875s] --   Found uuid, version 2.37.2
+[0.935s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.935s] -- Searching for dependencies of ignition-msgs5
+[0.954s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.961s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.962s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.963s] -- Searching for dependencies of ignition-common3
+[0.963s] -- Looking for dlfcn.h - found
+[0.963s] -- Looking for libdl - found
+[0.977s] -- Searching for <ignition-common3> component [graphics]
+[0.977s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.978s] -- Searching for dependencies of ignition-common3-graphics
+[0.978s] -- Looking for ignition-math6 -- found version 6.16.0
+[0.979s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.979s] -- Searching for dependencies of ignition-fuel_tools4
+[1.008s] -- Checking for module 'jsoncpp'
+[1.022s] --   Found jsoncpp, version 1.9.5
+[1.091s] -- Checking for module 'libzip'
+[1.115s] --   Found libzip, version 1.7.3
+[1.176s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.177s] -- Looking for ignition-math6 -- found version 6.16.0
+[1.178s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.180s] -- Gazebo version: 11.10
+[1.181s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.385s] -- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.637s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.726s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.742s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.759s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.759s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.759s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.832s] CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.832s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.832s]   rosidl_target_interfaces()
+[1.832s] Call Stack (most recent call first):
+[1.832s]   CMakeLists.txt:27 (rosidl_target_interfaces)
+[1.832s] 
+[1.833s] 
+[1.836s] CMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):
+[1.836s]   Use rosidl_get_typesupport_target() and target_link_libraries() instead of
+[1.836s]   rosidl_target_interfaces()
+[1.836s] Call Stack (most recent call first):
+[1.836s]   CMakeLists.txt:32 (rosidl_target_interfaces)
+[1.836s] 
+[1.836s] 
+[1.841s] -- Configuring done
+[1.886s] -- Generating done
+[1.900s] -- Build files have been written to: /home/quan/thuc_hanh_tuan3/build/ur3_llm_control
+[1.930s] [  1%] Generating C code for ROS interfaces
+[1.940s] [  3%] Generating C++ code for ROS interfaces
+[1.940s] [  5%] Generating Rust code for ROS interfaces
+[1.943s] [  5%] Built target ament_cmake_python_symlink_ur3_llm_control
+[2.158s] [  5%] Built target ur3_llm_control__rs
+[2.193s] running egg_info
+[2.194s] writing ur3_llm_control.egg-info/PKG-INFO
+[2.194s] writing dependency_links to ur3_llm_control.egg-info/dependency_links.txt
+[2.194s] writing top-level names to ur3_llm_control.egg-info/top_level.txt
+[2.196s] reading manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[2.196s] writing manifest file 'ur3_llm_control.egg-info/SOURCES.txt'
+[2.219s] [  5%] Built target ament_cmake_python_build_ur3_llm_control_egg
+[2.278s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_c
+[2.289s] [  5%] Built target ur3_llm_control__cpp
+[2.295s] [  9%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/execute_skill__functions.c.o
+[2.295s] [  9%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/set_attachment__functions.c.o
+[2.297s] [ 11%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_c.dir/rosidl_generator_c/ur3_llm_control/srv/detail/get_world_state__functions.c.o
+[2.301s] [ 13%] Generating C++ type support for eProsima Fast-RTPS
+[2.302s] [ 17%] Generating C++ type support dispatch for ROS interfaces
+[2.302s] [ 17%] Generating C++ introspection for ROS interfaces
+[2.344s] [ 19%] Linking C shared library libur3_llm_control__rosidl_generator_c.so
+[2.378s] [ 19%] Built target ur3_llm_control__rosidl_generator_c
+[2.389s] [ 25%] Generating C type support dispatch for ROS interfaces
+[2.390s] [ 25%] Generating C introspection for ROS interfaces
+[2.390s] [ 25%] Generating C type support for eProsima Fast-RTPS
+[2.551s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_cpp
+[2.562s] [ 26%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/get_world_state__type_support.cpp.o
+[2.564s] [ 30%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/set_attachment__type_support.cpp.o
+[2.564s] [ 30%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ur3_llm_control/srv/execute_skill__type_support.cpp.o
+[2.619s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_cpp
+[2.621s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_cpp
+[2.634s] [ 36%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/get_world_state__type_support.cpp.o
+[2.634s] [ 36%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/execute_skill__type_support.cpp.o
+[2.634s] [ 36%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ur3_llm_control/srv/detail/set_attachment__type_support.cpp.o
+[2.636s] [ 40%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/execute_skill__type_support.cpp.o
+[2.636s] [ 40%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/set_attachment__type_support.cpp.o
+[2.636s] [ 42%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ur3_llm_control/srv/detail/dds_fastrtps/get_world_state__type_support.cpp.o
+[2.715s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c
+[2.732s] [ 46%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/execute_skill__type_support.cpp.o
+[2.732s] [ 46%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/set_attachment__type_support.cpp.o
+[2.733s] [ 48%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/ur3_llm_control/srv/get_world_state__type_support.cpp.o
+[2.800s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c
+[2.808s] [ 50%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_c.so
+[2.825s] [ 51%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/execute_skill__type_support_c.cpp.o
+[2.827s] [ 53%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/get_world_state__type_support_c.cpp.o
+[2.836s] [ 55%] Building CXX object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ur3_llm_control/srv/detail/set_attachment__type_support_c.cpp.o
+[2.879s] [ 55%] Built target ur3_llm_control__rosidl_typesupport_c
+[2.912s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c
+[2.931s] [ 61%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/execute_skill__type_support.c.o
+[2.931s] [ 61%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/get_world_state__type_support.c.o
+[2.931s] [ 61%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ur3_llm_control/srv/detail/set_attachment__type_support.c.o
+[2.959s] [ 63%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_cpp.so
+[2.997s] [ 65%] Linking C shared library libur3_llm_control__rosidl_typesupport_introspection_c.so
+[3.020s] [ 65%] Built target ur3_llm_control__rosidl_typesupport_cpp
+[3.054s] [ 65%] Built target ur3_llm_control__rosidl_typesupport_introspection_c
+[3.217s] [ 67%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_introspection_cpp.so
+[3.290s] [ 69%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_fastrtps_c.so
+[3.305s] [ 69%] Built target ur3_llm_control__rosidl_typesupport_introspection_cpp
+[3.318s] [ 71%] Linking CXX shared library libur3_llm_control__rosidl_typesupport_fastrtps_cpp.so
+[3.365s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c
+[3.388s] [ 71%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_cpp
+[3.409s] [ 71%] Built target ur3_llm_control
+[3.425s] Consolidate compiler generated dependencies of target robot_skills
+[3.428s] [ 73%] Generating Python code for ROS interfaces
+[3.434s] Consolidate compiler generated dependencies of target ur3_physical_gripper
+[3.444s] [ 75%] Building CXX object CMakeFiles/robot_skills.dir/src/robot_skills.cpp.o
+[3.458s] [ 76%] Building CXX object CMakeFiles/ur3_physical_gripper.dir/src/physical_gripper.cpp.o
+[3.915s] [ 76%] Built target ur3_llm_control__py
+[3.927s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_py
+[3.938s] [ 78%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_set_attachment_s.c.o
+[3.939s] [ 80%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_execute_skill_s.c.o
+[3.939s] [ 82%] Building C object CMakeFiles/ur3_llm_control__rosidl_generator_py.dir/rosidl_generator_py/ur3_llm_control/srv/_get_world_state_s.c.o
+[4.059s] [ 84%] Linking C shared library rosidl_generator_py/ur3_llm_control/libur3_llm_control__rosidl_generator_py.so
+[4.097s] [ 84%] Built target ur3_llm_control__rosidl_generator_py
+[4.111s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c__pyext
+[4.111s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c__pyext
+[4.111s] Consolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext
+[4.121s] [ 88%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_c.c.o
+[4.121s] [ 88%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_introspection_c.c.o
+[4.123s] [ 90%] Building C object CMakeFiles/ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[4.204s] [ 94%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.204s] [ 94%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.234s] [ 96%] Linking C shared library rosidl_generator_py/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.238s] [ 96%] Built target ur3_llm_control__rosidl_typesupport_c__pyext
+[4.240s] [ 96%] Built target ur3_llm_control__rosidl_typesupport_introspection_c__pyext
+[4.269s] [ 96%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext
+[6.998s] /home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/robot_skills.cpp: In member function ‘bool RobotSkills::gazeboAttach(const string&, bool, std::string&)’:
+[6.998s] /home/quan/thuc_hanh_tuan3/src/ur3_llm_control/src/robot_skills.cpp:440:14: error: ‘using element_type = struct ur3_llm_control::srv::SetAttachment_Request_<std::allocator<void> >’ {aka ‘struct ur3_llm_control::srv::SetAttachment_Request_<std::allocator<void> >’} has no member named ‘attach’
+[6.998s]   440 |     request->attach = attach;
+[6.998s]       |              ^~~~~~
+[12.821s] [ 98%] Linking CXX shared library libur3_physical_gripper.so
+[13.214s] [ 98%] Built target ur3_physical_gripper
+[13.344s] gmake[2]: *** [CMakeFiles/robot_skills.dir/build.make:76: CMakeFiles/robot_skills.dir/src/robot_skills.cpp.o] Error 1
+[13.344s] gmake[1]: *** [CMakeFiles/Makefile2:615: CMakeFiles/robot_skills.dir/all] Error 2
+[13.344s] gmake: *** [Makefile:146: all] Error 2
+[13.346s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/ur3_llm_control' returned '2': CMAKE_PREFIX_PATH=/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake --build /home/quan/thuc_hanh_tuan3/build/ur3_llm_control -- -j16 -l16

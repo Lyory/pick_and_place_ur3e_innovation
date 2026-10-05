@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ur3_llm_control/srv/SetAttachment.srv
+// generated code does not contain a copyright notice
+
+
+module ur3_llm_control {
+  module srv {
+    struct SetAttachment_Request {
+      string action;
+
+      string object;
+    };
+    struct SetAttachment_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

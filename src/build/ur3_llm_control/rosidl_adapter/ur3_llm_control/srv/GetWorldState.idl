@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ur3_llm_control/srv/GetWorldState.srv
+// generated code does not contain a copyright notice
+
+
+module ur3_llm_control {
+  module srv {
+    struct GetWorldState_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetWorldState_Response {
+      sequence<string> objects;
+
+      sequence<string> locations;
+
+      string held_object;
+
+      sequence<double> x;
+
+      sequence<double> y;
+
+      boolean camera_ready;
+    };
+  };
+};

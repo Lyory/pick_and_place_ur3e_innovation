@@ -1,0 +1,49 @@
+[0.016s] Invoking command in '/home/quan/thuc_hanh_tuan3/build/robotiq_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/thuc_hanh_tuan3/src/ros2_robotiq_gripper/robotiq_driver -DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/install/robotiq_driver
+[0.122s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting CXX compiler ABI info
+[0.208s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.214s] -- Detecting CXX compile features
+[0.215s] -- Detecting CXX compile features - done
+[0.219s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.367s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.454s] -- Found hardware_interface: 2.54.2 (/opt/ros/humble/share/hardware_interface/cmake)
+[0.506s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.515s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.524s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.534s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.547s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.731s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.733s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.755s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.809s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.811s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.829s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.833s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.843s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.854s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.863s] -- Looking for C++ include pthread.h
+[0.942s] -- Looking for C++ include pthread.h - found
+[0.942s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.024s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.026s] -- Found Threads: TRUE  
+[1.075s] -- Configuring incomplete, errors occurred!
+[1.075s] See also "/home/quan/thuc_hanh_tuan3/build/robotiq_driver/CMakeFiles/CMakeOutput.log".
+[1.075s] [31mCMake Error at CMakeLists.txt:24 (find_package):
+[1.075s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[1.075s]   asked CMake to find a package configuration file provided by "serial", but
+[1.075s]   CMake did not find one.
+[1.075s] 
+[1.075s]   Could not find a package configuration file provided by "serial" with any
+[1.075s]   of the following names:
+[1.075s] 
+[1.075s]     serialConfig.cmake
+[1.076s]     serial-config.cmake
+[1.076s] 
+[1.076s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[1.076s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[1.076s]   provides a separate development package or SDK, be sure it has been
+[1.076s]   installed.
+[1.076s] 
+[1.076s] [0m
+[1.083s] Invoked command in '/home/quan/thuc_hanh_tuan3/build/robotiq_driver' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble /usr/bin/cmake /home/quan/thuc_hanh_tuan3/src/ros2_robotiq_gripper/robotiq_driver -DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/install/robotiq_driver

@@ -1,0 +1,8 @@
+{
+  "package_name": "ur3_llm_control",
+  "non_idl_tuples": [
+    "/home/quan/thuc_hanh_tuan3/src/ur3_llm_control:srv/ExecuteSkill.srv",
+    "/home/quan/thuc_hanh_tuan3/src/ur3_llm_control:srv/SetAttachment.srv",
+    "/home/quan/thuc_hanh_tuan3/src/ur3_llm_control:srv/GetWorldState.srv"
+  ]
+}

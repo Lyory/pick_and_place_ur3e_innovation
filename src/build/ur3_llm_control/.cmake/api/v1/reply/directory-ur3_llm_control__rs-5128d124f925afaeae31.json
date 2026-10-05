@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ur3_llm_control__rs",
+		"source" : "/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control/ur3_llm_control__rs"
+	}
+}

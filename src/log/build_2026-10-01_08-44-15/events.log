@@ -1,0 +1,642 @@
+[0.000000] (-) TimerEvent: {}
+[0.000197] (-) JobUnselected: {'identifier': 'robotiq_controllers'}
+[0.000239] (-) JobUnselected: {'identifier': 'robotiq_driver'}
+[0.000377] (-) JobUnselected: {'identifier': 'robotiq_hardware_tests'}
+[0.000391] (-) JobUnselected: {'identifier': 'ur_simulation_gazebo'}
+[0.000403] (robotiq_description) JobQueued: {'identifier': 'robotiq_description', 'dependencies': OrderedDict()}
+[0.000415] (ur3_llm_control) JobQueued: {'identifier': 'ur3_llm_control', 'dependencies': OrderedDict([('robotiq_description', '/home/quan/thuc_hanh_tuan3/src/install/robotiq_description'), ('ur_simulation_gazebo', '/home/quan/thuc_hanh_tuan3/src/install/ur_simulation_gazebo')])}
+[0.000714] (robotiq_description) JobStarted: {'identifier': 'robotiq_description'}
+[0.008375] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'cmake'}
+[0.008856] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '/home/quan/thuc_hanh_tuan3/src/ros2_robotiq_gripper/robotiq_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/quan/thuc_hanh_tuan3/src/install/robotiq_description'], 'cwd': '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/thuc_hanh_tuan3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1576'), ('SYSTEMD_EXEC_PID', '1880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6183'), ('NVM_DIR', '/home/quan/.nvm'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install:/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:11936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1850,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1850'), ('INVOCATION_ID', '3fa4862d4ebb406289aa4b66650af5ff'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:dc9f4181-fda9-48cb-b028-77e6953050c9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[0.061367] (robotiq_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099909] (-) TimerEvent: {}
+[0.112213] (robotiq_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.119328] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.197065] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.200044] (-) TimerEvent: {}
+[0.202088] (robotiq_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.202240] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.202315] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.204324] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.270450] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.275300] (robotiq_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.275517] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.275834] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.278207] (robotiq_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300227] (-) TimerEvent: {}
+[0.400457] (-) TimerEvent: {}
+[0.403822] (robotiq_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.454470] (robotiq_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.500639] (-) TimerEvent: {}
+[0.526668] (robotiq_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.528001] (robotiq_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.529085] (robotiq_description) StdoutLine: {'line': b'-- Build files have been written to: /home/quan/thuc_hanh_tuan3/src/build/robotiq_description\n'}
+[0.532652] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.534659] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'build'}
+[0.534718] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description', '--', '-j16', '-l16'], 'cwd': '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/thuc_hanh_tuan3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1576'), ('SYSTEMD_EXEC_PID', '1880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6183'), ('NVM_DIR', '/home/quan/.nvm'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install:/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:11936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1850,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1850'), ('INVOCATION_ID', '3fa4862d4ebb406289aa4b66650af5ff'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:dc9f4181-fda9-48cb-b028-77e6953050c9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[0.572388] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.572944] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'install'}
+[0.582676] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description'], 'cwd': '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/thuc_hanh_tuan3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1576'), ('SYSTEMD_EXEC_PID', '1880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6183'), ('NVM_DIR', '/home/quan/.nvm'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install:/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:11936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1850,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1850'), ('INVOCATION_ID', '3fa4862d4ebb406289aa4b66650af5ff'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:dc9f4181-fda9-48cb-b028-77e6953050c9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/src/build/robotiq_description'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[0.590584] (robotiq_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.590798] (robotiq_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.591165] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml\n'}
+[0.600775] (-) TimerEvent: {}
+[0.601598] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/launch/robotiq_control.launch.py\n'}
+[0.608442] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py\n'}
+[0.618052] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.624806] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.634274] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.640637] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.650011] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.657397] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.666821] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl\n'}
+[0.673439] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl\n'}
+[0.682691] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl\n'}
+[0.689593] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl\n'}
+[0.699313] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl\n'}
+[0.700944] (-) TimerEvent: {}
+[0.707287] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl\n'}
+[0.716576] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl\n'}
+[0.725490] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl\n'}
+[0.734609] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl\n'}
+[0.743446] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl\n'}
+[0.753061] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.767092] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.777380] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.786405] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.794645] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.801090] (-) TimerEvent: {}
+[0.803566] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.812755] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae\n'}
+[0.819810] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae\n'}
+[0.828618] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae\n'}
+[0.837679] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae\n'}
+[0.845089] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae\n'}
+[0.854472] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae\n'}
+[0.861439] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae\n'}
+[0.869513] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae\n'}
+[0.877482] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae\n'}
+[0.887345] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae\n'}
+[0.894626] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/rviz/view_urdf.rviz\n'}
+[0.901342] (-) TimerEvent: {}
+[0.903481] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/2f_140.ros2_control.xacro\n'}
+[0.910911] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro\n'}
+[0.919315] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140.xacro\n'}
+[0.926539] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_gripper.urdf.xacro\n'}
+[0.937626] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_macro.urdf.xacro\n'}
+[0.948314] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro\n'}
+[0.957331] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro\n'}
+[0.966842] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro\n'}
+[0.974513] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description\n'}
+[0.983705] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description\n'}
+[0.991343] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh\n'}
+[1.000430] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv\n'}
+[1.001400] (-) TimerEvent: {}
+[1.007587] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/environment/path.sh\n'}
+[1.016744] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/environment/path.dsv\n'}
+[1.023684] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/local_setup.bash\n'}
+[1.032840] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/local_setup.sh\n'}
+[1.039822] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/local_setup.zsh\n'}
+[1.048769] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/local_setup.dsv\n'}
+[1.054969] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/package.dsv\n'}
+[1.063203] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description\n'}
+[1.070344] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake\n'}
+[1.076524] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake\n'}
+[1.084954] (robotiq_description) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/robotiq_description/share/robotiq_description/package.xml\n'}
+[1.094684] (robotiq_description) CommandEnded: {'returncode': 0}
+[1.101786] (-) TimerEvent: {}
+[1.107793] (robotiq_description) JobEnded: {'identifier': 'robotiq_description', 'rc': 0}
+[1.108233] (ur3_llm_control) JobStarted: {'identifier': 'ur3_llm_control'}
+[1.114809] (ur3_llm_control) JobProgress: {'identifier': 'ur3_llm_control', 'progress': 'cmake'}
+[1.115643] (ur3_llm_control) JobProgress: {'identifier': 'ur3_llm_control', 'progress': 'build'}
+[1.116123] (ur3_llm_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control', '--', '-j16', '-l16'], 'cwd': '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/thuc_hanh_tuan3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1576'), ('SYSTEMD_EXEC_PID', '1880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6183'), ('NVM_DIR', '/home/quan/.nvm'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install:/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:11936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1850,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1850'), ('INVOCATION_ID', '3fa4862d4ebb406289aa4b66650af5ff'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/robotiq_description:/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:dc9f4181-fda9-48cb-b028-77e6953050c9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/robotiq_description:/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[1.143162] (ur3_llm_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.202015] (-) TimerEvent: {}
+[1.235849] (ur3_llm_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.239822] (ur3_llm_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.257637] (ur3_llm_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.259045] (ur3_llm_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.262746] (ur3_llm_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.269478] (ur3_llm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.277601] (ur3_llm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.297049] (ur3_llm_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.298188] (ur3_llm_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.302232] (-) TimerEvent: {}
+[1.371389] (ur3_llm_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.402327] (-) TimerEvent: {}
+[1.403611] (ur3_llm_control) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.409856] (ur3_llm_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.417941] (ur3_llm_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.428269] (ur3_llm_control) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.10 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.436800] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.502426] (-) TimerEvent: {}
+[1.535161] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.552246] (ur3_llm_control) StdoutLine: {'line': b'-- Found tcb_span: 1.3.2 (/opt/ros/humble/share/tcb_span/cmake)\n'}
+[1.553112] (ur3_llm_control) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.21 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.564001] (ur3_llm_control) StdoutLine: {'line': b'-- Found parameter_traits: 0.7.6 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[1.592943] (ur3_llm_control) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[1.602624] (-) TimerEvent: {}
+[1.610741] (ur3_llm_control) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.685023] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[1.702759] (-) TimerEvent: {}
+[1.705113] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[1.719108] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[1.737932] (ur3_llm_control) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)\n'}
+[1.759959] (ur3_llm_control) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.769501] (ur3_llm_control) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.776138] (ur3_llm_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.777057] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.16.0\n'}
+[1.780154] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.781168] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.786826] (ur3_llm_control) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.786949] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.794614] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.794743] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.794783] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.794815] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.794845] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.794875] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.794909] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.794953] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.794988] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.795020] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.795066] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.795117] (ur3_llm_control) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.802940] (-) TimerEvent: {}
+[1.879945] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.16.0\n'}
+[1.880462] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.880749] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.894415] (ur3_llm_control) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.902076] (ur3_llm_control) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.903031] (-) TimerEvent: {}
+[1.905863] (ur3_llm_control) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.920208] (ur3_llm_control) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.977047] (ur3_llm_control) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.998419] (ur3_llm_control) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.003178] (-) TimerEvent: {}
+[2.062860] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.063685] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.081503] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.16.0\n'}
+[2.089724] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.090011] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.090670] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.090741] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.090775] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.102653] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.102900] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.103157] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.103232] (-) TimerEvent: {}
+[2.103722] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.16.0\n'}
+[2.104421] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.104707] (ur3_llm_control) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.138517] (ur3_llm_control) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.157364] (ur3_llm_control) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.203386] (-) TimerEvent: {}
+[2.211299] (ur3_llm_control) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.227481] (ur3_llm_control) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.284972] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.285397] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.16.0\n'}
+[2.285925] (ur3_llm_control) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.287779] (ur3_llm_control) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.288328] (ur3_llm_control) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.303602] (-) TimerEvent: {}
+[2.403887] (-) TimerEvent: {}
+[2.503023] (ur3_llm_control) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.1 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.504142] (-) TimerEvent: {}
+[2.604380] (-) TimerEvent: {}
+[2.704747] (-) TimerEvent: {}
+[2.756078] (ur3_llm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.804837] (-) TimerEvent: {}
+[2.863374] (ur3_llm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.884460] (ur3_llm_control) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.905038] (-) TimerEvent: {}
+[2.907010] (ur3_llm_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.907167] (ur3_llm_control) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.907211] (ur3_llm_control) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.973892] (ur3_llm_control) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[2.974064] (ur3_llm_control) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[2.974102] (ur3_llm_control) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[2.974131] (ur3_llm_control) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.974179] (ur3_llm_control) StderrLine: {'line': b'  CMakeLists.txt:27 (rosidl_target_interfaces)\n'}
+[2.974213] (ur3_llm_control) StderrLine: {'line': b'\n'}
+[2.974244] (ur3_llm_control) StderrLine: {'line': b'\x1b[0m\n'}
+[2.977858] (ur3_llm_control) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_target_interfaces.cmake:32 (message):\n'}
+[2.977928] (ur3_llm_control) StderrLine: {'line': b'  Use rosidl_get_typesupport_target() and target_link_libraries() instead of\n'}
+[2.977959] (ur3_llm_control) StderrLine: {'line': b'  rosidl_target_interfaces()\n'}
+[2.977985] (ur3_llm_control) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.978010] (ur3_llm_control) StderrLine: {'line': b'  CMakeLists.txt:32 (rosidl_target_interfaces)\n'}
+[2.978034] (ur3_llm_control) StderrLine: {'line': b'\n'}
+[2.978059] (ur3_llm_control) StderrLine: {'line': b'\x1b[0m\n'}
+[2.984719] (ur3_llm_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.005136] (-) TimerEvent: {}
+[3.030556] (ur3_llm_control) StdoutLine: {'line': b'-- Generating done\n'}
+[3.047081] (ur3_llm_control) StdoutLine: {'line': b'-- Build files have been written to: /home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control\n'}
+[3.088675] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_c\x1b[0m\n'}
+[3.100241] (ur3_llm_control) StdoutLine: {'line': b'[  3%] Built target ur3_llm_control__rs\n'}
+[3.100471] (ur3_llm_control) StdoutLine: {'line': b'[  3%] Built target ur3_llm_control__cpp\n'}
+[3.101743] (ur3_llm_control) StdoutLine: {'line': b'[ 13%] Built target ur3_llm_control__rosidl_generator_c\n'}
+[3.105262] (-) TimerEvent: {}
+[3.111696] (ur3_llm_control) StdoutLine: {'line': b'[ 13%] Built target ament_cmake_python_symlink_ur3_llm_control\n'}
+[3.113920] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.114314] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c\x1b[0m\n'}
+[3.114448] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.117510] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[3.120392] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.120610] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.130400] (ur3_llm_control) StdoutLine: {'line': b'[ 23%] Built target ur3_llm_control__rosidl_typesupport_c\n'}
+[3.133631] (ur3_llm_control) StdoutLine: {'line': b'[ 40%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_cpp\n'}
+[3.133900] (ur3_llm_control) StdoutLine: {'line': b'[ 42%] Built target ur3_llm_control__rosidl_typesupport_introspection_c\n'}
+[3.134197] (ur3_llm_control) StdoutLine: {'line': b'[ 51%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c\n'}
+[3.137485] (ur3_llm_control) StdoutLine: {'line': b'[ 61%] Built target ur3_llm_control__rosidl_typesupport_introspection_cpp\n'}
+[3.137957] (ur3_llm_control) StdoutLine: {'line': b'[ 71%] Built target ur3_llm_control__rosidl_typesupport_cpp\n'}
+[3.159541] (ur3_llm_control) StdoutLine: {'line': b'[ 71%] Built target ur3_llm_control\n'}
+[3.171126] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_skills\x1b[0m\n'}
+[3.173580] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_physical_gripper\x1b[0m\n'}
+[3.182876] (ur3_llm_control) StdoutLine: {'line': b'[ 73%] Built target ur3_llm_control__py\n'}
+[3.194891] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_generator_py\x1b[0m\n'}
+[3.195115] (ur3_llm_control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/robot_skills.dir/src/robot_skills.cpp.o\x1b[0m\n'}
+[3.205359] (-) TimerEvent: {}
+[3.211084] (ur3_llm_control) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/ur3_physical_gripper.dir/src/physical_gripper.cpp.o\x1b[0m\n'}
+[3.211300] (ur3_llm_control) StdoutLine: {'line': b'[ 84%] Built target ur3_llm_control__rosidl_generator_py\n'}
+[3.225941] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.226195] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.226297] (ur3_llm_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ur3_llm_control__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.240962] (ur3_llm_control) StdoutLine: {'line': b'[ 88%] Built target ur3_llm_control__rosidl_typesupport_introspection_c__pyext\n'}
+[3.241830] (ur3_llm_control) StdoutLine: {'line': b'[ 96%] Built target ur3_llm_control__rosidl_typesupport_c__pyext\n'}
+[3.241922] (ur3_llm_control) StdoutLine: {'line': b'[ 96%] Built target ur3_llm_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.305475] (-) TimerEvent: {}
+[3.336211] (ur3_llm_control) StdoutLine: {'line': b'running egg_info\n'}
+[3.336583] (ur3_llm_control) StdoutLine: {'line': b'writing ur3_llm_control.egg-info/PKG-INFO\n'}
+[3.336876] (ur3_llm_control) StdoutLine: {'line': b'writing dependency_links to ur3_llm_control.egg-info/dependency_links.txt\n'}
+[3.336987] (ur3_llm_control) StdoutLine: {'line': b'writing top-level names to ur3_llm_control.egg-info/top_level.txt\n'}
+[3.338763] (ur3_llm_control) StdoutLine: {'line': b"reading manifest file 'ur3_llm_control.egg-info/SOURCES.txt'\n"}
+[3.339034] (ur3_llm_control) StdoutLine: {'line': b"writing manifest file 'ur3_llm_control.egg-info/SOURCES.txt'\n"}
+[3.366121] (ur3_llm_control) StdoutLine: {'line': b'[ 96%] Built target ament_cmake_python_build_ur3_llm_control_egg\n'}
+[3.405591] (-) TimerEvent: {}
+[3.505971] (-) TimerEvent: {}
+[3.606285] (-) TimerEvent: {}
+[3.706601] (-) TimerEvent: {}
+[3.806881] (-) TimerEvent: {}
+[3.907263] (-) TimerEvent: {}
+[4.007555] (-) TimerEvent: {}
+[4.107871] (-) TimerEvent: {}
+[4.208184] (-) TimerEvent: {}
+[4.308438] (-) TimerEvent: {}
+[4.408741] (-) TimerEvent: {}
+[4.509030] (-) TimerEvent: {}
+[4.609298] (-) TimerEvent: {}
+[4.709546] (-) TimerEvent: {}
+[4.809834] (-) TimerEvent: {}
+[4.910141] (-) TimerEvent: {}
+[5.010424] (-) TimerEvent: {}
+[5.110710] (-) TimerEvent: {}
+[5.210998] (-) TimerEvent: {}
+[5.311346] (-) TimerEvent: {}
+[5.411777] (-) TimerEvent: {}
+[5.512256] (-) TimerEvent: {}
+[5.612713] (-) TimerEvent: {}
+[5.713210] (-) TimerEvent: {}
+[5.813570] (-) TimerEvent: {}
+[5.913940] (-) TimerEvent: {}
+[6.014353] (-) TimerEvent: {}
+[6.114820] (-) TimerEvent: {}
+[6.215159] (-) TimerEvent: {}
+[6.315531] (-) TimerEvent: {}
+[6.415833] (-) TimerEvent: {}
+[6.516162] (-) TimerEvent: {}
+[6.616474] (-) TimerEvent: {}
+[6.716786] (-) TimerEvent: {}
+[6.817086] (-) TimerEvent: {}
+[6.917556] (-) TimerEvent: {}
+[7.018022] (-) TimerEvent: {}
+[7.118317] (-) TimerEvent: {}
+[7.218675] (-) TimerEvent: {}
+[7.319015] (-) TimerEvent: {}
+[7.419345] (-) TimerEvent: {}
+[7.519718] (-) TimerEvent: {}
+[7.620182] (-) TimerEvent: {}
+[7.720550] (-) TimerEvent: {}
+[7.820845] (-) TimerEvent: {}
+[7.921282] (-) TimerEvent: {}
+[8.021562] (-) TimerEvent: {}
+[8.121982] (-) TimerEvent: {}
+[8.222299] (-) TimerEvent: {}
+[8.322678] (-) TimerEvent: {}
+[8.423210] (-) TimerEvent: {}
+[8.523613] (-) TimerEvent: {}
+[8.624110] (-) TimerEvent: {}
+[8.724540] (-) TimerEvent: {}
+[8.824837] (-) TimerEvent: {}
+[8.925204] (-) TimerEvent: {}
+[9.025503] (-) TimerEvent: {}
+[9.125934] (-) TimerEvent: {}
+[9.226366] (-) TimerEvent: {}
+[9.326753] (-) TimerEvent: {}
+[9.427247] (-) TimerEvent: {}
+[9.527622] (-) TimerEvent: {}
+[9.627982] (-) TimerEvent: {}
+[9.728369] (-) TimerEvent: {}
+[9.828754] (-) TimerEvent: {}
+[9.929197] (-) TimerEvent: {}
+[10.029628] (-) TimerEvent: {}
+[10.130002] (-) TimerEvent: {}
+[10.230387] (-) TimerEvent: {}
+[10.330764] (-) TimerEvent: {}
+[10.431062] (-) TimerEvent: {}
+[10.531364] (-) TimerEvent: {}
+[10.631668] (-) TimerEvent: {}
+[10.732043] (-) TimerEvent: {}
+[10.832440] (-) TimerEvent: {}
+[10.932762] (-) TimerEvent: {}
+[11.033180] (-) TimerEvent: {}
+[11.133470] (-) TimerEvent: {}
+[11.233884] (-) TimerEvent: {}
+[11.334306] (-) TimerEvent: {}
+[11.434750] (-) TimerEvent: {}
+[11.535191] (-) TimerEvent: {}
+[11.635599] (-) TimerEvent: {}
+[11.736019] (-) TimerEvent: {}
+[11.836322] (-) TimerEvent: {}
+[11.936726] (-) TimerEvent: {}
+[12.037135] (-) TimerEvent: {}
+[12.137448] (-) TimerEvent: {}
+[12.237889] (-) TimerEvent: {}
+[12.338247] (-) TimerEvent: {}
+[12.438552] (-) TimerEvent: {}
+[12.538980] (-) TimerEvent: {}
+[12.639273] (-) TimerEvent: {}
+[12.739586] (-) TimerEvent: {}
+[12.839921] (-) TimerEvent: {}
+[12.940299] (-) TimerEvent: {}
+[13.040719] (-) TimerEvent: {}
+[13.141040] (-) TimerEvent: {}
+[13.241384] (-) TimerEvent: {}
+[13.341790] (-) TimerEvent: {}
+[13.405996] (ur3_llm_control) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX shared library libur3_physical_gripper.so\x1b[0m\n'}
+[13.441924] (-) TimerEvent: {}
+[13.542349] (-) TimerEvent: {}
+[13.644530] (-) TimerEvent: {}
+[13.745045] (-) TimerEvent: {}
+[13.845529] (-) TimerEvent: {}
+[13.887093] (ur3_llm_control) StdoutLine: {'line': b'[ 98%] Built target ur3_physical_gripper\n'}
+[13.945656] (-) TimerEvent: {}
+[14.045982] (-) TimerEvent: {}
+[14.146348] (-) TimerEvent: {}
+[14.246650] (-) TimerEvent: {}
+[14.346948] (-) TimerEvent: {}
+[14.447334] (-) TimerEvent: {}
+[14.547765] (-) TimerEvent: {}
+[14.648066] (-) TimerEvent: {}
+[14.748320] (-) TimerEvent: {}
+[14.848586] (-) TimerEvent: {}
+[14.948893] (-) TimerEvent: {}
+[15.049205] (-) TimerEvent: {}
+[15.149440] (-) TimerEvent: {}
+[15.249733] (-) TimerEvent: {}
+[15.350067] (-) TimerEvent: {}
+[15.450343] (-) TimerEvent: {}
+[15.550618] (-) TimerEvent: {}
+[15.650876] (-) TimerEvent: {}
+[15.751154] (-) TimerEvent: {}
+[15.851417] (-) TimerEvent: {}
+[15.951694] (-) TimerEvent: {}
+[16.051968] (-) TimerEvent: {}
+[16.152395] (-) TimerEvent: {}
+[16.252788] (-) TimerEvent: {}
+[16.353164] (-) TimerEvent: {}
+[16.453439] (-) TimerEvent: {}
+[16.553836] (-) TimerEvent: {}
+[16.654288] (-) TimerEvent: {}
+[16.754680] (-) TimerEvent: {}
+[16.855048] (-) TimerEvent: {}
+[16.955345] (-) TimerEvent: {}
+[17.055615] (-) TimerEvent: {}
+[17.155910] (-) TimerEvent: {}
+[17.256332] (-) TimerEvent: {}
+[17.356738] (-) TimerEvent: {}
+[17.457049] (-) TimerEvent: {}
+[17.557495] (-) TimerEvent: {}
+[17.657812] (-) TimerEvent: {}
+[17.758126] (-) TimerEvent: {}
+[17.858395] (-) TimerEvent: {}
+[17.958815] (-) TimerEvent: {}
+[18.059166] (-) TimerEvent: {}
+[18.159454] (-) TimerEvent: {}
+[18.259840] (-) TimerEvent: {}
+[18.360227] (-) TimerEvent: {}
+[18.460563] (-) TimerEvent: {}
+[18.560990] (-) TimerEvent: {}
+[18.661362] (-) TimerEvent: {}
+[18.761758] (-) TimerEvent: {}
+[18.862091] (-) TimerEvent: {}
+[18.962444] (-) TimerEvent: {}
+[19.062779] (-) TimerEvent: {}
+[19.163089] (-) TimerEvent: {}
+[19.263462] (-) TimerEvent: {}
+[19.363837] (-) TimerEvent: {}
+[19.464252] (-) TimerEvent: {}
+[19.564576] (-) TimerEvent: {}
+[19.664910] (-) TimerEvent: {}
+[19.765304] (-) TimerEvent: {}
+[19.816850] (ur3_llm_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable robot_skills\x1b[0m\n'}
+[19.865447] (-) TimerEvent: {}
+[19.965843] (-) TimerEvent: {}
+[20.066159] (-) TimerEvent: {}
+[20.166414] (-) TimerEvent: {}
+[20.266794] (-) TimerEvent: {}
+[20.367202] (-) TimerEvent: {}
+[20.467546] (-) TimerEvent: {}
+[20.567922] (-) TimerEvent: {}
+[20.668218] (-) TimerEvent: {}
+[20.768567] (-) TimerEvent: {}
+[20.785696] (ur3_llm_control) StdoutLine: {'line': b'[100%] Built target robot_skills\n'}
+[20.796761] (ur3_llm_control) CommandEnded: {'returncode': 0}
+[20.797402] (ur3_llm_control) JobProgress: {'identifier': 'ur3_llm_control', 'progress': 'install'}
+[20.798554] (ur3_llm_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control'], 'cwd': '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'quan'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/lib:/home/quan/ros2_ws/install/msgs_test/lib:/home/quan/ros2_ws/install/component_pkg/lib:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('HOME', '/home/quan'), ('OLDPWD', '/home/quan/thuc_hanh_tuan3'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('NVM_BIN', '/home/quan/.nvm/versions/node/v24.21.0/bin'), ('NVM_INC', '/home/quan/.nvm/versions/node/v24.21.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '1576'), ('SYSTEMD_EXEC_PID', '1880'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6183'), ('NVM_DIR', '/home/quan/.nvm'), ('COLCON_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install:/home/quan/thuc_hanh_tuan3/install:/home/quan/ros2_ws/install:/home/quan/ros2_ws/src/msgs_test/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'quan'), ('JOURNAL_STREAM', '8:11936'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'quan'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/quan/.nvm/versions/node/v24.21.0/bin:/opt/ros/humble/bin:/home/quan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/quan-Inspiron-16-5620:@/tmp/.ICE-unix/1850,unix/quan-Inspiron-16-5620:/tmp/.ICE-unix/1850'), ('INVOCATION_ID', '3fa4862d4ebb406289aa4b66650af5ff'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/robotiq_description:/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/lifecycle_pkg:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:dc9f4181-fda9-48cb-b028-77e6953050c9'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'vi_VN'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('NINE_ROUTER_API_KEY', 'sk-8ed79aa5f3214038-90xfyy-3226ab4d'), ('PWD', '/home/quan/thuc_hanh_tuan3/src/build/ur3_llm_control'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/opt/ros/humble/lib'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/my_turtlesim/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_logic/lib/python3.10/site-packages:/home/quan/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/quan/ros2_ws/install/msgs_test/local/lib/python3.10/dist-packages:/home/quan/ros2_ws/install/lifecycle_pkg/lib/python3.10/site-packages:/home/quan/ros2_ws/src/msgs_test/install/msgs_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/quan/thuc_hanh_tuan3/src/install/robotiq_description:/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur3_llm_control:/home/quan/thuc_hanh_tuan3/install/ur_simulation_gazebo:/home/quan/ros2_ws/install/robot1:/home/quan/ros2_ws/install/robot:/home/quan/ros2_ws/install/msgs_test:/home/quan/ros2_ws/install/component_pkg:/home/quan/ros2_ws/src/msgs_test/install/msgs_test:/home/quan/ros2_ws/install/my_turtlesim:/home/quan/ros2_ws/install/my_robot_logic:/home/quan/ros2_ws/install/my_robot_controller:/home/quan/ros2_ws/install/lifecycle_pkg:/opt/ros/humble')]), 'shell': False}
+[20.805039] (ur3_llm_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.805456] (ur3_llm_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.805711] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ament_index/resource_index/rosidl_interfaces/ur3_llm_control\n'}
+[20.806052] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[20.806280] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__functions.h\n'}
+[20.806383] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__struct.h\n'}
+[20.806429] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__type_support.h\n'}
+[20.806474] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__functions.h\n'}
+[20.806639] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__struct.h\n'}
+[20.806683] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__type_support.h\n'}
+[20.806765] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__functions.h\n'}
+[20.806806] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__struct.h\n'}
+[20.806857] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__type_support.h\n'}
+[20.806904] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/execute_skill.h\n'}
+[20.806943] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/get_world_state.h\n'}
+[20.806996] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/set_attachment.h\n'}
+[20.807032] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/library_path.sh\n'}
+[20.807067] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/library_path.dsv\n'}
+[20.807215] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[20.807280] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_fastrtps_c.h\n'}
+[20.807339] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_fastrtps_c.h\n'}
+[20.807397] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_fastrtps_c.h\n'}
+[20.807663] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[20.807733] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__builder.hpp\n'}
+[20.807787] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__struct.hpp\n'}
+[20.807842] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__traits.hpp\n'}
+[20.807900] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__type_support.hpp\n'}
+[20.807957] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__builder.hpp\n'}
+[20.808015] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__struct.hpp\n'}
+[20.808070] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__traits.hpp\n'}
+[20.808143] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__type_support.hpp\n'}
+[20.808210] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__builder.hpp\n'}
+[20.808285] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__struct.hpp\n'}
+[20.808340] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__traits.hpp\n'}
+[20.808396] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__type_support.hpp\n'}
+[20.808454] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/execute_skill.hpp\n'}
+[20.808510] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/get_world_state.hpp\n'}
+[20.808564] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/set_attachment.hpp\n'}
+[20.808857] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[20.808954] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.809007] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.809052] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[20.809248] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[20.809310] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_introspection_c.h\n'}
+[20.809367] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_introspection_c.h\n'}
+[20.809422] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_introspection_c.h\n'}
+[20.809609] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/execute_skill__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.809668] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/get_world_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.809725] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/include/ur3_llm_control/ur3_llm_control/srv/detail/set_attachment__rosidl_typesupport_introspection_cpp.hpp\n'}
+[20.809815] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/pythonpath.sh\n'}
+[20.809901] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/pythonpath.dsv\n'}
+[20.810118] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/PKG-INFO\n'}
+[20.810259] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/SOURCES.txt\n'}
+[20.810438] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/dependency_links.txt\n'}
+[20.810542] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control-0.1.0-py3.10.egg-info/top_level.txt\n'}
+[20.810736] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/__init__.py\n'}
+[20.810852] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_c.c\n'}
+[20.810976] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[20.811123] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/_ur3_llm_control_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[20.811345] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/libur3_llm_control__rosidl_generator_py.so\n'}
+[20.811418] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/__init__.py\n'}
+[20.811466] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_execute_skill.py\n'}
+[20.811529] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_execute_skill_s.c\n'}
+[20.811569] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_get_world_state.py\n'}
+[20.811606] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_get_world_state_s.c\n'}
+[20.811669] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_set_attachment.py\n'}
+[20.811708] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv/_set_attachment_s.c\n'}
+[20.811747] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.811786] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.811870] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.811905] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.811991] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.812147] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/ur3_llm_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[20.812448] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/rust/Cargo.toml\n'}
+[20.812531] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/rust/build.rs\n'}
+[20.812601] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/rust/src/lib.rs\n'}
+[20.812683] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/rust/src/srv.rs\n'}
+[20.812725] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/rust/src/srv/rmw.rs\n'}
+[20.812971] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill.idl\n'}
+[20.813029] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment.idl\n'}
+[20.813139] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState.idl\n'}
+[20.813324] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill.srv\n'}
+[20.813527] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill_Request.msg\n'}
+[20.813569] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/ExecuteSkill_Response.msg\n'}
+[20.813610] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment.srv\n'}
+[20.813687] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment_Request.msg\n'}
+[20.813727] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/SetAttachment_Response.msg\n'}
+[20.813872] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState.srv\n'}
+[20.813997] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState_Request.msg\n'}
+[20.814162] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srv/GetWorldState_Response.msg\n'}
+[20.814281] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/robot_skills\n'}
+[20.814462] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_physical_gripper.so\n'}
+[20.814595] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/llm_planner.py\n'}
+[20.814682] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/task_validator.py\n'}
+[20.814798] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/skill_executor.py\n'}
+[20.814895] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/task_manager.py\n'}
+[20.814982] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/camera_state.py\n'}
+[20.815096] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/ur3_llm_control/demo_occupied_zone.py\n'}
+[20.815225] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/launch/llm_robot.launch.py\n'}
+[20.815330] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/home_joints.yaml\n'}
+[20.815418] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/scene.yaml\n'}
+[20.815531] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/staging_joints.yaml\n'}
+[20.815630] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/student_config.yaml\n'}
+[20.815711] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/ur3e/default_kinematics.yaml\n'}
+[20.815791] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/ur3e/joint_limits.yaml\n'}
+[20.815871] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/ur3e/physical_parameters.yaml\n'}
+[20.815980] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/ur3e/visual_parameters.yaml\n'}
+[20.816085] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/config/ur_controllers.yaml\n'}
+[20.816190] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/prompt/planner_prompt.txt\n'}
+[20.816274] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/worlds/assignment2.world\n'}
+[20.816386] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/blue_cube/model.config\n'}
+[20.816483] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/blue_cube/model.sdf\n'}
+[20.816617] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/buffer/model.config\n'}
+[20.816733] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/buffer/model.sdf\n'}
+[20.816845] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/green_cube/model.config\n'}
+[20.816975] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/green_cube/model.sdf\n'}
+[20.817108] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/purple_cube/model.config\n'}
+[20.817225] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/purple_cube/model.sdf\n'}
+[20.817318] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/red_cube/model.config\n'}
+[20.817423] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/red_cube/model.sdf\n'}
+[20.817509] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_table/model.config\n'}
+[20.817589] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/ur3_task_table/model.sdf\n'}
+[20.817667] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/yellow_cube/model.config\n'}
+[20.817750] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/yellow_cube/model.sdf\n'}
+[20.817843] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_a/model.config\n'}
+[20.817928] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_a/model.sdf\n'}
+[20.818009] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_b/model.config\n'}
+[20.818114] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_b/model.sdf\n'}
+[20.818216] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_c/model.config\n'}
+[20.818297] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/models/zone_c/model.sdf\n'}
+[20.818371] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/urdf/ur3e_with_gripper.urdf.xacro\n'}
+[20.818471] (ur3_llm_control) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/srdf/ur_robotiq.srdf.xacro\n'}
+[20.827418] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ament_index/resource_index/package_run_dependencies/ur3_llm_control\n'}
+[20.827698] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ament_index/resource_index/parent_prefix_path/ur3_llm_control\n'}
+[20.827859] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/ament_prefix_path.sh\n'}
+[20.827993] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/ament_prefix_path.dsv\n'}
+[20.828147] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/path.sh\n'}
+[20.828274] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/environment/path.dsv\n'}
+[20.828456] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/local_setup.bash\n'}
+[20.828579] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/local_setup.sh\n'}
+[20.828696] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/local_setup.zsh\n'}
+[20.828830] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/local_setup.dsv\n'}
+[20.828985] (ur3_llm_control) StdoutLine: {'line': b'-- Symlinking: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/package.dsv\n'}
+[20.835754] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ament_index/resource_index/packages/ur3_llm_control\n'}
+[20.835855] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake-extras.cmake\n'}
+[20.835932] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.836010] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.836086] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[20.836191] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[20.836281] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.836362] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[20.836442] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[20.836528] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_controlConfig.cmake\n'}
+[20.836604] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_controlConfig-version.cmake\n'}
+[20.836674] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/package.xml\n'}
+[20.836757] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_c.so\n'}
+[20.836918] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_c.so\n'}
+[20.837070] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[20.837219] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_c.so\n'}
+[20.837359] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_c.so\n'}
+[20.837585] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_introspection_cpp.so\n'}
+[20.837701] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_typesupport_cpp.so\n'}
+[20.864603] (ur3_llm_control) StdoutLine: {'line': b"Listing '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control'...\n"}
+[20.864782] (ur3_llm_control) StdoutLine: {'line': b"Compiling '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/__init__.py'...\n"}
+[20.864864] (ur3_llm_control) StdoutLine: {'line': b"Listing '/home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/local/lib/python3.10/dist-packages/ur3_llm_control/srv'...\n"}
+[20.868388] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/lib/libur3_llm_control__rosidl_generator_py.so\n'}
+[20.868595] (-) TimerEvent: {}
+[20.868704] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cExport.cmake\n'}
+[20.868784] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[20.869024] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[20.869105] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[20.869198] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_cppExport.cmake\n'}
+[20.869262] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[20.869325] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[20.869388] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[20.869450] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[20.869522] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cExport.cmake\n'}
+[20.869590] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[20.869653] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[20.869716] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[20.869778] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cppExport.cmake\n'}
+[20.869841] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/ur3_llm_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[20.869902] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_pyExport.cmake\n'}
+[20.869963] (ur3_llm_control) StdoutLine: {'line': b'-- Up-to-date: /home/quan/thuc_hanh_tuan3/src/install/ur3_llm_control/share/ur3_llm_control/cmake/export_ur3_llm_control__rosidl_generator_pyExport-noconfig.cmake\n'}
+[20.870718] (ur3_llm_control) CommandEnded: {'returncode': 0}
+[20.884244] (ur3_llm_control) JobEnded: {'identifier': 'ur3_llm_control', 'rc': 0}
+[20.885049] (-) EventReactorShutdown: {}
