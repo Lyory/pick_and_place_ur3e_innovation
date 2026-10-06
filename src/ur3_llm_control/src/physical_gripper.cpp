@@ -81,8 +81,14 @@ private:
   std::pair<bool, bool> FingerContacts() {
     bool left = false, right = false;
     if (!cube_) return {left, right};
-    for (const auto *contact : contact_manager_->GetContacts()) {
-      if (!contact || !contact->collision1 || !contact->collision2) continue;
+    // GetContacts() contains an allocation pool, not just this physics step's
+    // contacts. Entries beyond GetContactCount() can be stale from old grasps.
+    for (unsigned int i = 0; i < contact_manager_->GetContactCount(); ++i) {
+      const auto *contact = contact_manager_->GetContact(i);
+      if (!contact || contact->count <= 0 || !contact->collision1 || !contact->collision2)
+        continue;
+      const double age = (world_->SimTime() - contact->time).Double();
+      if (age < 0.0 || age > 0.02) continue;
       const auto first = contact->collision1->GetLink();
       const auto second = contact->collision2->GetLink();
       if (!first || !second) continue;
@@ -118,8 +124,8 @@ private:
           Finish(false, "Cube is outside open Robotiq fingers"); return;
         }
         desired_ = 0.75;
-        last_left_contact_ = common::Time();
-        last_right_contact_ = common::Time();
+        bilateral_since_ = common::Time();
+        confirming_contact_ = false;
       } else if (active_->action == "open") {
         if (grasp_ && !active_->object.empty() && held_ != active_->object) {
           Finish(false, "Gripper holds a different cube"); return;
@@ -169,12 +175,19 @@ private:
       }
     } else if (elapsed > 0.35 && left > 0.25 && right < -0.25) {
       const auto [touch_left, touch_right] = FingerContacts();
-      if (touch_left) last_left_contact_ = world_->SimTime();
-      if (touch_right) last_right_contact_ = world_->SimTime();
-      const bool both_touching = last_left_contact_.Double() && last_right_contact_.Double() &&
-        (world_->SimTime() - last_left_contact_).Double() <= 0.10 &&
-        (world_->SimTime() - last_right_contact_).Double() <= 0.10;
-      if (both_touching) {
+      if (!(touch_left && touch_right)) {
+        confirming_contact_ = false;
+        bilateral_since_ = common::Time();
+        desired_ = 0.75;
+      } else if (!confirming_contact_) {
+        // Hold the actuator while both pads settle. Any lost contact resets
+        // confirmation; two contacts from different times never count as a grasp.
+        confirming_contact_ = true;
+        bilateral_since_ = world_->SimTime();
+        desired_ = commanded_;
+      }
+      if (touch_left && touch_right && confirming_contact_ &&
+          (world_->SimTime() - bilateral_since_).Double() >= 0.01) {
         // Lock the block only after both physical fingertip contacts occur.
         for (const auto &collision : block_->GetCollisions()) collision->SetCollideBits(0);
         grasp_ = world_->Physics()->CreateJoint("fixed", robot);
@@ -182,7 +195,7 @@ private:
         grasp_->Init();
         held_ = active_->object;
         desired_ = commanded_;
-        RCLCPP_INFO(node_->get_logger(), "Bilateral fingertip contact confirmed for %s at %.3f rad",
+        RCLCPP_INFO(node_->get_logger(), "Simultaneous fingertip contacts stable for 10 ms: %s at %.3f rad",
                     held_.c_str(), commanded_);
         Finish(true, "Both Robotiq fingertips contacted " + held_);
         return;
@@ -210,13 +223,13 @@ private:
   }};
   std::string held_;
   double desired_{0.0}, commanded_{0.0};
-  common::Time started_, last_publish_, last_update_, last_left_contact_, last_right_contact_;
+  common::Time started_, last_publish_, last_update_, bilateral_since_;
   gazebo_ros::Node::SharedPtr node_;
   rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr joint_pub_;
   rclcpp::Service<ur3_llm_control::srv::SetAttachment>::SharedPtr service_;
   event::ConnectionPtr update_;
   std::mutex mutex_;
-  bool busy_{false};
+  bool busy_{false}, confirming_contact_{false};
   std::shared_ptr<Job> pending_, active_;
 };
 GZ_REGISTER_WORLD_PLUGIN(PhysicalGripper)

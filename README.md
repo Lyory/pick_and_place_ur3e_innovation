@@ -1,7 +1,57 @@
+
 # UR3e ROS 2 workspace
 
-Project mô phỏng UR3e với gripper, camera trên cao, năm cube, ba zone và bàn thao tác. Lệnh ngôn ngữ tự nhiên được LLM đổi thành plan skill; validator kiểm tra plan; MoveIt 2 tính quỹ đạo. Robotiq 2F-85 gắn với UR3e bằng adapter cố định; các khớp ngón đóng/mở trong Gazebo và fixed joint giữ cube khi gắp.
+Workspace ROS 2 cho mô phỏng Universal Robots trong Gazebo Classic và package `ur3_llm_control`.
 
-Xem [hướng dẫn package](src/ur3_llm_control/README.md) để build, chạy bằng 9Router và chạy demo Zone B bị chiếm.
+## Yêu cầu
 
-Yêu cầu: Ubuntu 22.04, ROS 2 Humble, Gazebo Classic, MoveIt 2, `python3-opencv`, `python3-numpy` và các dependency trong `package.xml`.
+- Ubuntu 22.04 và ROS 2 Humble
+- `colcon`, `rosdep`, Gazebo Classic và MoveIt 2
+- Các phụ thuộc ROS được khai báo trong các file `package.xml`
+
+## Clone và build
+
+```bash
+git clone https://github.com/Lyory/pick_and_place_ur3e_innovation.git
+
+cd pick_and_place_ur3e/src
+
+source /opt/ros/humble/setup.bash
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+python3 -m pip install --user openai
+colcon build --symlink-install
+source install/setup.bash
+```
+
+## Cài đặt 9router
+
+```bash
+npm install -g 9router
+
+9router
+```
+
+## Chạy
+
+Sử dụng đồng thời 3 terminal:
+Terminal 1: (9router)
+```bash
+9router --host 127.0.0.1 --port 20128 --no-browser
+```
+Terminal 2: robot và gazebo
+
+```bash
+cd pick_and_place_ur3e/src
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+ros2 launch ur3_llm_control llm_robot.launch.py
+```
+
+Terminal 3: Nhập lệnh cho robot
+```bash
+cd pick_and_place_ur3e/src
+source /opt/ros/humble/setup.bash
+source install/setup.bash
+ros2 run ur3_llm_control task_manager.py
+```

@@ -72,3 +72,17 @@ home()
 `temp_1=(0.26,-0.13)` và `temp_2=(0.26,0.13)` nằm gần tâm vùng với của robot. Perception, validator và robot skills cùng đọc tọa độ từ `config/scene.yaml`; prompt mô tả các tọa độ tương ứng. Camera vẫn xác nhận slot trống trước khi dùng. Vị trí tạm không có thành khay.
 
 Lệnh đi thẳng đứng không bị đổi thành một lượt nâng lên rồi hạ xuống. Cao độ quan sát và di chuyển ngang thống nhất ở 0,99 m. Khi tay đã ở pose đích, hàm di chuyển trả về ngay.
+
+## Gắp lại cube từ zone
+
+Camera xác định tâm cube từ hai cạnh mặt trên hướng xa camera, với kích thước cube trong `scene.yaml`. Nếu gripper che một cạnh, hệ thống dùng cạnh mặt trên còn đầy đủ, đồng thời yêu cầu có cạnh song song đối diện để loại bỏ đường biên do che khuất. Không dùng tâm toàn bộ mask màu (gồm mặt bên, gây lệch vị trí gắp) và không ép vị trí về tâm zone. TF và intrinsics vẫn lấy tại thời điểm chụp; ảnh được chờ TF tương ứng trước khi xử lý.
+
+Gripper chỉ duyệt `GetContactCount()` contact hợp lệ của Gazebo. Hai đầu ngón phải cùng tiếp xúc cube trong từng bước vật lý liên tục ít nhất 10 ms. Actuator dừng đóng trong lúc xác nhận; nếu một contact mất thì quá trình xác nhận bị hủy và ngón tiếp tục đóng. Không cộng contact của hai thời điểm khác nhau. Cube chỉ được giữ sau bước xác nhận này, không thay đổi trực tiếp pose cube.
+
+Kiểm tra vật lý trên một mô phỏng mới:
+
+```bash
+ros2 run ur3_llm_control demo_zone_regrasp.py --zone zone_a
+```
+
+Có thể chọn `zone_b` hoặc `zone_c`. Demo gắp Green, đặt vào zone, gắp lại khỏi zone và đặt vào `temp_1`. Log Gazebo phải ghi `Simultaneous fingertip contacts stable for 10 ms` trước mỗi lần gắp thành công.

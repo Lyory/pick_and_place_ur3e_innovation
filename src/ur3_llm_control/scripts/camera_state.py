@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Detect cubes with the wrist camera, projecting pixels through live camera TF."""
 import math
+from collections import deque
 import time
 from pathlib import Path
 import cv2
@@ -31,6 +32,70 @@ def rotation(q):
                      [2*(x*z-y*w), 2*(y*z+x*w), 1-2*(x*x+y*y)]])
 
 
+def estimate_cube_center(contour, origin, rot, intrinsics, top, cube_size):
+    """Fit the square top from its two far silhouette edges.
+
+    The colour mask includes side faces. Projecting its centroid onto the top
+    plane biases the grasp toward the camera, especially inside a tray. The
+    edges facing away from the camera belong to the actual top square; side
+    faces extend the silhouette only toward the camera. Fit those edges and
+    offset inward by half the configured cube width. No zone-centre snapping.
+    """
+    pixels = contour.reshape(-1, 2).astype(float)
+    camera_rays = np.column_stack(((pixels[:, 0]-intrinsics[2])/intrinsics[0],
+                                  (pixels[:, 1]-intrinsics[5])/intrinsics[4],
+                                  np.ones(len(pixels))))
+    rays = camera_rays @ rot.T
+    if np.any(rays[:, 2] >= -.1):
+        return None
+    xy = (origin + rays * ((top-origin[2])/rays[:, 2])[:, None])[:, :2]
+    hull = cv2.convexHull(xy.astype(np.float32))
+    polygon = cv2.approxPolyDP(hull, .0015, True).reshape(-1, 2).astype(float)
+    if len(polygon) < 4:
+        return None
+    area = np.sum(polygon[:, 0]*np.roll(polygon[:, 1], -1) -
+                  polygon[:, 1]*np.roll(polygon[:, 0], -1))
+    if area < 0:
+        polygon = polygon[::-1]
+    edges = []
+    all_edges = []
+    for a, b in zip(polygon, np.roll(polygon, -1, axis=0)):
+        delta = b-a
+        length = np.linalg.norm(delta)
+        if not .60*cube_size <= length <= 1.35*cube_size:
+            continue
+        outward = np.array([delta[1], -delta[0]])/length
+        midpoint = (a+b)/2
+        all_edges.append((outward, midpoint, length))
+        if np.dot(outward, origin[:2]-midpoint) >= 0:
+            continue
+        edges.append((outward, np.dot(outward, midpoint)-cube_size/2, length))
+    candidates = []
+    for i, (n1, d1, length1) in enumerate(edges):
+        for n2, d2, length2 in edges[i+1:]:
+            if abs(np.dot(n1, n2)) > .20:
+                continue
+            center = np.linalg.solve(np.array([n1, n2]), np.array([d1, d2]))
+            # Prefer two complete cube-width edges rather than small noisy facets.
+            score = abs(length1-cube_size)+abs(length2-cube_size)
+            candidates.append((score, center))
+    if candidates:
+        return min(candidates, key=lambda c: c[0])[1]
+    # A finger can mask part of one far edge (notably at Zone B). A complete
+    # far edge still fixes the top centre: its midpoint plus half a cube inward.
+    # Require an opposite parallel edge to reject diagonal occlusion boundaries.
+    complete = []
+    for normal, midpoint, length in all_edges:
+        if not .90*cube_size <= length <= 1.05*cube_size:
+            continue
+        if np.dot(normal, origin[:2]-midpoint) >= 0:
+            continue
+        if not any(np.dot(normal, other) < -.98 for other, _, _ in all_edges):
+            continue
+        complete.append((abs(length-cube_size), midpoint-normal*cube_size/2))
+    return min(complete, key=lambda c: c[0])[1] if complete else None
+
+
 class CameraState(Node):
     def __init__(self):
         super().__init__('camera_state')
@@ -47,6 +112,7 @@ class CameraState(Node):
         self.detections = {}
         self.last_frame = 0.0
         self.calibration = None
+        self.pending = deque(maxlen=6)
         self.tf = Buffer()
         self.listener = TransformListener(self.tf, self)
         self.create_subscription(CameraInfo, '/task_camera/camera_info', self.on_info,
@@ -54,12 +120,26 @@ class CameraState(Node):
         self.create_subscription(Image, '/task_camera/image_raw', self.on_image,
                                  qos_profile_sensor_data)
         self.create_service(GetWorldState, '/camera_world_state', self.on_state)
+        self.create_timer(.05, self.process_pending)
 
     def on_info(self, msg):
         if msg.k[0] > 0 and msg.k[4] > 0:
             self.calibration = msg
 
     def on_image(self, msg):
+        self.pending.append(msg)
+
+    def process_pending(self):
+        # Image and joint TF arrive independently. Give the exact image-time TF
+        # a chance to arrive instead of dropping every image ahead of joint TF.
+        for msg in reversed(self.pending):
+            if self.tf.can_transform(self.frame, msg.header.frame_id,
+                                     Time.from_msg(msg.header.stamp)):
+                self.process_image(msg)
+                self.pending.clear()
+                return
+
+    def process_image(self, msg):
         info = self.calibration
         if info is None or (info.width, info.height) != (msg.width, msg.height):
             return
@@ -97,19 +177,23 @@ class CameraState(Node):
                                   (v-info.k[5])/info.k[4], 1.0])
             if ray[2] >= -0.1:
                 continue
-            # The colour centroid lies on the visible top face of a resting cube.
+            # Use the silhouette centroid only to select the support plane.
+            # The grasp point itself comes from fitting the cube's top edges.
             top = self.table_top + self.cube_size
-            point = origin + ray * ((top-origin[2])/ray[2])
-            x, y = float(point[0]), float(point[1])
+            coarse = origin + ray * ((top-origin[2])/ray[2])
+            location = next((zone for zone, p in self.zones.items()
+                             if math.hypot(coarse[0]-p['x'], coarse[1]-p['y']) < .065), 'table')
+            if location != 'table':
+                top = self.zones[location]['z'] + .0025 + self.cube_size
+            center = estimate_cube_center(contour, origin, rot, info.k, top, self.cube_size)
+            if center is None:
+                continue
+            x, y = float(center[0]), float(center[1])
             xmin, xmax, ymin, ymax = self.bounds
             if not (xmin <= x <= xmax and ymin <= y <= ymax):
                 continue
             location = next((zone for zone, p in self.zones.items()
                              if math.hypot(x-p['x'], y-p['y']) < .052), 'table')
-            if location != 'table':
-                top = self.zones[location]['z'] + .0025 + self.cube_size
-                point = origin + ray * ((top-origin[2])/ray[2])
-                x, y = float(point[0]), float(point[1])
             detections[name] = (location, x, y)
         self.detections = detections
         self.last_frame = time.monotonic()
