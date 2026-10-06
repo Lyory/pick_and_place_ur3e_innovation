@@ -14,7 +14,7 @@ Workspace ROS 2 cho mô phỏng Universal Robots trong Gazebo Classic và packag
 ```bash
 git clone https://github.com/Lyory/pick_and_place_ur3e_innovation.git
 
-cd pick_and_place_ur3e_innovation/src
+cd pick_and_place_ur3e_innovation/
 
 source /opt/ros/humble/setup.bash
 rosdep update
