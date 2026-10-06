@@ -7,7 +7,7 @@ workspace_root="$(cd -- "$script_dir/../../.." && pwd)"
 source /opt/ros/humble/setup.bash
 source "$workspace_root/install/setup.bash"
 
-# The Python planner loads the ignored workspace .env automatically.
+# The Python planner loads the workspace .env automatically.
 if [[ -f "$workspace_root/.env" || -n "${ROBOT_LLM_ENV_FILE:-}" ]]; then
   exec ros2 run ur3_llm_control task_manager.py
 fi

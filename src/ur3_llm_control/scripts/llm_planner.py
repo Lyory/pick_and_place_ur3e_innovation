@@ -19,6 +19,8 @@ def load_local_env():
         candidates = [parent / ".env" for parent in Path(__file__).resolve().parents]
         candidates += [Path.cwd() / ".env"]
         candidates += [parent / ".env" for parent in Path.cwd().parents]
+        candidates = [candidate for path in candidates
+                      for candidate in (path.with_name(".env.local"), path)]
     for path in candidates:
         if not path.is_file():
             continue
@@ -52,13 +54,13 @@ class LLMPlanner:
         self.base_url = base_url or os.getenv("ROBOT_LLM_BASE_URL", DEFAULT_BASE_URL)
         if not self.model:
             raise PlannerError("Set ROBOT_LLM_MODEL in .env to a model available in 9Router")
+        api_key = os.getenv("NINEROUTER_API_KEY")
+        if not api_key or api_key == "abcxyz":
+            raise PlannerError("Replace abcxyz in .env with the API key copied from the 9Router dashboard")
         try:
             from openai import OpenAI
         except ImportError as exc:
             raise PlannerError("Install the openai Python package") from exc
-        api_key = os.getenv("NINEROUTER_API_KEY")
-        if not api_key:
-            raise PlannerError("Set NINEROUTER_API_KEY in .env to the API key copied from the 9Router dashboard")
         self.client = OpenAI(
             api_key=api_key,
             base_url=self.base_url,

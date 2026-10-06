@@ -6,9 +6,10 @@
 
   <!-- The UR adapter overlaps both the tool flange and the Robotiq base mesh,
        so the assembly has no visual or kinematic gap. -->
-  <xacro:ur_to_robotiq prefix="" parent="tool0" child="robotiq_mount"/>
-  <xacro:robotiq_gripper name="Robotiq2F85" prefix="" parent="robotiq_mount"
-                          include_ros2_control="false" sim_gazebo="true">
+  <xacro:ur_to_robotiq prefix="" connected_to="tool0"/>
+  <!-- Gazebo finger actuation is provided by ur3_physical_gripper in the world. -->
+  <xacro:robotiq_gripper name="Robotiq2F85" prefix="" parent="gripper_mount_link"
+                          include_ros2_control="false">
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </xacro:robotiq_gripper>
   <!-- Eye-in-hand camera; Gazebo cameras look along their local +X axis. -->

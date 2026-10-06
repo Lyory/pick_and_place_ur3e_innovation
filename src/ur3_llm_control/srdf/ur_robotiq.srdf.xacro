@@ -7,7 +7,7 @@
   <!-- The Robotiq closed-chain geometry overlaps at its hinges. The arm
        planner treats the assembled gripper as one tool; Gazebo simulates its
        internal joints and finger contact independently. -->
-  <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_mount" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)gripper_mount_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_base_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_left_knuckle_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_right_knuckle_link" reason="Robotiq mechanism"/>
@@ -17,15 +17,15 @@
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_right_inner_knuckle_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_left_finger_tip_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)ur_to_robotiq_link" link2="$(arg prefix)robotiq_85_right_finger_tip_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_base_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_left_knuckle_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_right_knuckle_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_left_finger_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_right_finger_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_left_inner_knuckle_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_right_inner_knuckle_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_left_finger_tip_link" reason="Robotiq mechanism"/>
-  <disable_collisions link1="$(arg prefix)robotiq_mount" link2="$(arg prefix)robotiq_85_right_finger_tip_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_base_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_left_knuckle_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_right_knuckle_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_left_finger_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_right_finger_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_left_inner_knuckle_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_right_inner_knuckle_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_left_finger_tip_link" reason="Robotiq mechanism"/>
+  <disable_collisions link1="$(arg prefix)gripper_mount_link" link2="$(arg prefix)robotiq_85_right_finger_tip_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)robotiq_85_base_link" link2="$(arg prefix)robotiq_85_left_knuckle_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)robotiq_85_base_link" link2="$(arg prefix)robotiq_85_right_knuckle_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)robotiq_85_base_link" link2="$(arg prefix)robotiq_85_left_finger_link" reason="Robotiq mechanism"/>
@@ -63,6 +63,6 @@
   <disable_collisions link1="$(arg prefix)robotiq_85_right_inner_knuckle_link" link2="$(arg prefix)robotiq_85_right_finger_tip_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)robotiq_85_left_finger_tip_link" link2="$(arg prefix)robotiq_85_right_finger_tip_link" reason="Robotiq mechanism"/>
   <disable_collisions link1="$(arg prefix)wrist_3_link" link2="$(arg prefix)ur_to_robotiq_link" reason="Mounted tool"/>
-  <disable_collisions link1="$(arg prefix)wrist_3_link" link2="$(arg prefix)robotiq_mount" reason="Mounted tool"/>
+  <disable_collisions link1="$(arg prefix)wrist_3_link" link2="$(arg prefix)gripper_mount_link" reason="Mounted tool"/>
   <disable_collisions link1="$(arg prefix)wrist_3_link" link2="$(arg prefix)robotiq_85_base_link" reason="Mounted tool"/>
 </robot>

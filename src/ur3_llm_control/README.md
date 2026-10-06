@@ -4,7 +4,7 @@ Luồng chính: **lệnh người dùng → LLM planner → JSON plan → valida
 
 ## Mô phỏng
 
-Gazebo Classic có UR3e, camera gắn ở cổ tay, bàn, ba zone và năm cube. Khi khởi động, **cả năm cube đều nằm ngoài zone trên bàn**. Model Robotiq 2F-85 lấy từ `src/ros2_robotiq_gripper/robotiq_description`. Adapter của repo gắn cố định vào `tool0`; đế gripper gắn vào adapter, nên tay và gripper là một chuỗi khớp liên tục, không có khe hở. `pick()` mở sáu khớp ngón, di chuyển đến cube, đóng các khớp theo cùng một mức và chỉ tạo fixed joint khi Gazebo ghi nhận cả hai đầu ngón chạm cube. Sau khi gắp, tay nâng thẳng lên cao độ an toàn rồi đi tới chỗ đặt; sau khi đặt, tay về tư thế quan sát để cập nhật toàn bàn. `place()` mở ngón trước, rồi tháo fixed joint khi cube đã được đưa tới vị trí đích. Không có lệnh đổi trực tiếp pose cube. `buffer` không có thành khay. Blue cube khởi tạo ở `(0.35, -0.13)` trên bàn, cách xa buffer `(0.48, 0.025)`. Purple cube ở `(0.40, 0.12)`, gần tâm vùng làm việc hơn vị trí cũ `(0.48, 0.30)`.
+Gazebo Classic có UR3e, camera gắn ở cổ tay, bàn, ba zone và năm cube. Khi khởi động, **cả năm cube đều nằm ngoài zone trên bàn**. Model Robotiq 2F-85 lấy từ package `robotiq_description` của ROS Humble. Adapter của repo gắn cố định vào `tool0`; đế gripper gắn vào adapter, nên tay và gripper là một chuỗi khớp liên tục, không có khe hở. `pick()` mở sáu khớp ngón, di chuyển đến cube, đóng các khớp theo cùng một mức và chỉ tạo fixed joint khi Gazebo ghi nhận cả hai đầu ngón chạm cube. Sau khi gắp, tay nâng thẳng lên cao độ an toàn rồi đi tới chỗ đặt; sau khi đặt, tay về tư thế quan sát để cập nhật toàn bàn. `place()` mở ngón trước, rồi tháo fixed joint khi cube đã được đưa tới vị trí đích. Không có lệnh đổi trực tiếp pose cube. `buffer` không có thành khay. Blue cube khởi tạo ở `(0.35, -0.13)` trên bàn, cách xa buffer `(0.48, 0.025)`. Purple cube ở `(0.40, 0.12)`, gần tâm vùng làm việc hơn vị trí cũ `(0.48, 0.30)`.
 
 Camera `/task_camera/image_raw` nhận dạng màu và cung cấp vị trí qua `/camera_world_state`; `/get_world_state` kết hợp dữ liệu ảnh với trạng thái đang cầm. Skill đọc lại ảnh trước khi gắp/đặt. Validator chặn kế hoạch đặt vào vị trí có vật. Lưới va chạm của đầu ngón Robotiq kéo dài khoảng 0,16 m từ `tool0`; điểm gắp giữ cổ tay cao hơn tâm cube 0,17 m. Kiểm tra quỹ đạo chặn thao tác đưa đầu ngón xuyên qua mặt bàn. SRDF cho phép các khớp nội bộ của gripper và adapter tiếp xúc như thiết kế; các vật khác vẫn được kiểm tra va chạm. Camera nằm trên giá gắn cố định với `tool0`, có frame `wrist_camera_optical_frame`. Perception dùng `/task_camera/camera_info` và TF tại thời điểm chụp để chiếu pixel xuống mặt trên của cube; không dùng pose camera cố định hay tọa độ khởi tạo cube. Task manager gọi `detect_objects()` để đi từ Home đến pose quan sát, chụp trạng thái và ở lại đó trong lúc lập kế hoạch. Không tự quay về Home sau khi chụp. Nếu chưa có bản đồ camera, `/get_world_state` cũng khởi tạo quan sát này. Các thao tác quan sát và gắp/đặt được khóa để tránh điều khiển đồng thời.
 
@@ -13,7 +13,7 @@ Plan hiển thị và thực thi đủ các bước `detect_objects`, `check_zon
 ## Build và chạy
 
 ```bash
-cd /home/quan/thuc_hanh_tuan3
+cd ~/pick_and_place_ur3e_innovation
 source /opt/ros/humble/setup.bash
 rosdep install --from-paths src --ignore-src -r -y
 python3 -m pip install --user openai
@@ -23,6 +23,8 @@ ros2 launch ur3_llm_control llm_robot.launch.py
 ```
 
 Launch tự thêm thư mục mesh của `robotiq_description` vào `GAZEBO_MODEL_PATH` để Gazebo Classic vẽ được gripper. Góc nhìn ban đầu của Gazebo bao gồm cả UR3e và bàn. Chỉ chạy một phiên launch của workspace này; các phiên chạy đồng thời dùng chung tên controller sẽ gửi lệnh chồng lên nhau. Khi thay đổi URDF hoặc launch, dừng phiên cũ bằng `Ctrl+C` rồi chạy lại.
+
+File `.env` ở gốc workspace được đưa lên Git với key mẫu `abcxyz` và comment hướng dẫn. Thay `abcxyz` bằng key 9Router, giữ hoặc sửa ID model theo dashboard. Chương trình tự đọc, không cần `source .env`, và ưu tiên `.env.local` nếu có. Không commit key thật; có thể dùng `.env.local` hoặc chọn file khác bằng `ROBOT_LLM_ENV_FILE` để giữ key riêng.
 
 Ở terminal khác, cấu hình `NINEROUTER_API_KEY`, `ROBOT_LLM_MODEL` và `ROBOT_LLM_BASE_URL` trong `.env` ở gốc workspace, rồi chạy:
 
